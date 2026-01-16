@@ -1,0 +1,156 @@
+{
+  "beginner": [
+    {
+      "question": "Which of the following is considered a strong password?",
+      "options": ["Password123", "qwerty", "MyDogName", "T!m3$@2026"],
+      "answer": "T!m3$@2026"
+    },
+    {
+      "question": "What does HTTPS stand for?",
+      "options": ["HyperText Transfer Protocol Secure", "High Transfer Text Protocol Standard", "Hyperlink Transfer Protocol Service", "HyperText Transmission Security"],
+      "answer": "HyperText Transfer Protocol Secure"
+    },
+    {
+      "question": "Which of these is a common type of malware?",
+      "options": ["Firewall", "Antivirus", "Trojan Horse", "Router"],
+      "answer": "Trojan Horse"
+    },
+    {
+      "question": "Phishing attacks usually happen through?",
+      "options": ["Emails", "Printers", "USB drives", "Wi-Fi routers"],
+      "answer": "Emails"
+    },
+    {
+      "question": "Which of the following is used to protect a network?",
+      "options": ["Firewall", "Spreadsheet", "Compiler", "Text editor"],
+      "answer": "Firewall"
+    },
+    {
+      "question": "What is the main purpose of antivirus software?",
+      "options": ["To block ads", "To detect and remove malware", "To speed up the computer", "To manage files"],
+      "answer": "To detect and remove malware"
+    },
+    {
+      "question": "Which of these is a secure way to connect remotely?",
+      "options": ["Telnet", "FTP", "SSH", "HTTP"],
+      "answer": "SSH"
+    },
+    {
+      "question": "What does the 'C' in CIA triad stand for?",
+      "options": ["Control", "Confidentiality", "Compliance", "Connection"],
+      "answer": "Confidentiality"
+    },
+    {
+      "question": "Which of these is an example of two-factor authentication?",
+      "options": ["Password only", "PIN only", "Password + OTP", "Username only"],
+      "answer": "Password + OTP"
+    },
+    {
+      "question": "Which of these is a common sign of a phishing website?",
+      "options": ["HTTPS enabled", "Spelling mistakes in URL", "Valid SSL certificate", "Official domain name"],
+      "answer": "Spelling mistakes in URL"
+    }
+  ],
+  "advanced": [
+    {
+      "question": "Which tool is commonly used for network packet analysis?",
+      "options": ["Wireshark", "Photoshop", "Excel", "Notepad"],
+      "answer": "Wireshark"
+    },
+    {
+      "question": "What is SQL Injection primarily targeting?",
+      "options": ["Database queries", "Network traffic", "File systems", "Operating system kernel"],
+      "answer": "Database queries"
+    },
+    {
+      "question": "Which hashing algorithm is considered outdated and insecure?",
+      "options": ["SHA-256", "MD5", "SHA-512", "bcrypt"],
+      "answer": "MD5"
+    },
+    {
+      "question": "In penetration testing, what does 'reconnaissance' mean?",
+      "options": ["Exploiting vulnerabilities", "Gathering information", "Reporting findings", "Installing malware"],
+      "answer": "Gathering information"
+    },
+    {
+      "question": "Which protocol is used for secure web communication?",
+      "options": ["HTTP", "FTP", "HTTPS", "SMTP"],
+      "answer": "HTTPS"
+    },
+    {
+      "question": "What is the main purpose of a VPN?",
+      "options": ["To block ads", "To encrypt internet traffic", "To increase bandwidth", "To manage passwords"],
+      "answer": "To encrypt internet traffic"
+    },
+    {
+      "question": "Which of these is a brute-force attack?",
+      "options": ["Trying all possible passwords", "Sending fake emails", "Installing malware", "Intercepting traffic"],
+      "answer": "Trying all possible passwords"
+    },
+    {
+      "question": "What does XSS stand for?",
+      "options": ["Cross-Site Scripting", "Extended Secure Session", "XML Secure Standard", "Cross Security System"],
+      "answer": "Cross-Site Scripting"
+    },
+    {
+      "question": "Which port is commonly used for HTTPS?",
+      "options": ["21", "22", "80", "443"],
+      "answer": "443"
+    },
+    {
+      "question": "Which of these is a symmetric encryption algorithm?",
+      "options": ["RSA", "AES", "ECC", "DSA"],
+      "answer": "AES"
+    },
+    {
+      "question": "What is the purpose of a honeypot in cybersecurity?",
+      "options": ["To attract attackers and study their behavior", "To store passwords", "To block malware", "To encrypt traffic"],
+      "answer": "To attract attackers and study their behavior"
+    },
+    {
+      "question": "Which Linux command is used to check open ports?",
+      "options": ["ls", "netstat", "grep", "chmod"],
+      "answer": "netstat"
+    },
+    {
+      "question": "Which of these is NOT a common firewall type?",
+      "options": ["Packet-filtering", "Stateful inspection", "Proxy firewall", "Spreadsheet firewall"],
+      "answer": "Spreadsheet firewall"
+    },
+    {
+      "question": "What is the main risk of using public Wi-Fi without protection?",
+      "options": ["Slow internet", "Data interception", "Battery drain", "File corruption"],
+      "answer": "Data interception"
+    },
+    {
+      "question": "Which of these is a common password cracking tool?",
+      "options": ["John the Ripper", "Photoshop", "Excel", "Word"],
+      "answer": "John the Ripper"
+    },
+    {
+      "question": "What does 'zero-day vulnerability' mean?",
+      "options": ["A bug discovered and patched immediately", "A vulnerability exploited before a fix is available", "A virus lasting 24 hours", "A system crash on day zero"],
+      "answer": "A vulnerability exploited before a fix is available"
+    },
+    {
+      "question": "Which of these is a secure hashing algorithm?",
+      "options": ["MD5", "SHA-1", "SHA-256", "CRC32"],
+      "answer": "SHA-256"
+    },
+    {
+      "question": "Which tool is used for password recovery and cracking?",
+      "options": ["Hashcat", "Excel", "Wireshark", "Nmap"],
+      "answer": "Hashcat"
+    },
+    {
+      "question": "Which of these is a common reconnaissance tool?",
+      "options": ["Nmap", "Word", "Excel", "Paint"],
+      "answer": "Nmap"
+    },
+    {
+      "question": "Which of these is a principle of least privilege?",
+      "options": ["Users get only the access they need", "Users get admin rights by default", "All users share one password", "No restrictions on access"],
+      "answer": "Users get only the access they need"
+    }
+  ]
+}
