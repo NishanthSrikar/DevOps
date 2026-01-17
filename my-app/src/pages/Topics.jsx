@@ -1,21 +1,21 @@
 // src/pages/Topics.jsx
 import React from "react";
-import Card from "../components/Card";
-import { Link } from "react-router-dom";
+import TopicCard from "../components/TopicCard";
 
 const topics = [
   { id: "cyber_security", name: "Cyber Security", description: "Threats, defenses, and best practices." },
-  { id: "programming", name: "Programming", description: "Languages, paradigms, and coding challenges." }
+  { id: "react", name: "React", description: "Master React concepts from fundamentals to advanced patterns." },
+  { id: "cpp", name: "C++", description: "Test your knowledge of C++ programming concepts and advanced techniques." },
+  { id: "python", name: "Python", description: "Challenge yourself with Python basics, libraries, and problem-solving." }
 ];
 
 export default function Topics() {
   return (
-    <div style={{ display: "grid", gap: 16, padding: 20 }}>
-      {topics.map(t => (
-        <Card key={t.id} title={t.name} description={t.description}>
-          <Link to={`/quiz/${t.id}/beginner`}>Start Beginner</Link>
-        </Card>
-      ))}
+    <div className="topics">
+      <h2>Choose Your Topic</h2>
+      <div className="topic-grid">
+        {topics.map(t => <TopicCard key={t.id} topic={t} />)}
+      </div>
     </div>
   );
 }

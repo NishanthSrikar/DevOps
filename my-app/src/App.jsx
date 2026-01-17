@@ -9,6 +9,8 @@ import Topics from "./pages/Topics";
 import Quiz from "./pages/Quiz";
 import Result from "./pages/Result";
 import Leaderboard from "./pages/Leaderboard";
+import Help from "./pages/Help";
+import Profile from "./pages/Profile";
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
         <Route path="/quiz/:topicId/:level" element={<Quiz />} />
         <Route path="/result/:topicId/:level" element={<Result />} />
         <Route path="/leaderboard" element={<Leaderboard />} />
+        <Route path="/help" element={<Help />} /> 
+        <Route path="/profile" element={<Profile />} /> 
       </Routes>
     </Router>
   );
