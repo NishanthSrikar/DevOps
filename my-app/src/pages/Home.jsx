@@ -2,19 +2,13 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-export default function Home() {
-  const [currentUser, setCurrentUser] = useState(null);
+export default function Home({ user, setUser }) {
   const [topUsers, setTopUsers] = useState([]);
 
   useEffect(() => {
-    // Load logged-in user
-    const user = JSON.parse(localStorage.getItem("quizUser"));
-    setCurrentUser(user);
-
-    // Load leaderboard users
     const storedUsers = JSON.parse(localStorage.getItem("quizUsers")) || [];
     const sorted = [...storedUsers].sort((a, b) => (b.stars || 0) - (a.stars || 0));
-    setTopUsers(sorted.slice(0, 3)); // top 3
+    setTopUsers(sorted.slice(0, 3));
   }, []);
 
   return (

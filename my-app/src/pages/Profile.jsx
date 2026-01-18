@@ -1,45 +1,42 @@
 // src/pages/Profile.jsx
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
-export default function Profile() {
-  const [user, setUser] = useState(null);
+export default function Profile({ user, setUser }) {
   const [editing, setEditing] = useState(false);
   const [newPassword, setNewPassword] = useState("");
 
-  useEffect(() => {
-    const storedUser = JSON.parse(localStorage.getItem("quizUser"));
-    if (storedUser) setUser(storedUser);
-  }, []);
+  if (!user) {
+    return <p>No user logged in. Please login first.</p>;
+  }
 
   const handleLogout = () => {
+    // Clear user from state and localStorage
+    setUser(null);
     localStorage.removeItem("quizUser");
-    window.location.href = "/"; // redirect to home
+    window.location.hash = "#/"; // ✅ redirect to home (HashRouter safe)
   };
 
   const handleEdit = () => {
     setEditing(true);
   };
 
- const handleSave = () => {
-  const updatedUser = { ...user, password: newPassword || user.password };
-  setUser(updatedUser);
+  const handleSave = () => {
+    const updatedUser = { ...user, password: newPassword || user.password };
+    setUser(updatedUser);
 
-  // Update in quizUsers list
-  let allUsers = JSON.parse(localStorage.getItem("quizUsers")) || [];
-  allUsers = allUsers.map(u =>
-    u.username === updatedUser.username ? updatedUser : u
-  );
+    // Update in quizUsers list
+    let allUsers = JSON.parse(localStorage.getItem("quizUsers")) || [];
+    allUsers = allUsers.map(u =>
+      u.username === updatedUser.username ? updatedUser : u
+    );
 
-  // ✅ Save back both
-  localStorage.setItem("quizUser", JSON.stringify(updatedUser));
-  localStorage.setItem("quizUsers", JSON.stringify(allUsers));
+    // ✅ Save back both
+    localStorage.setItem("quizUser", JSON.stringify(updatedUser));
+    localStorage.setItem("quizUsers", JSON.stringify(allUsers));
 
-  setEditing(false);
-};
-
-  if (!user) {
-    return <p>No user logged in. Please login first.</p>;
-  }
+    setEditing(false);
+    setNewPassword("");
+  };
 
   // Mask password: show *** with last digit visible
   const maskedPassword =
@@ -48,7 +45,7 @@ export default function Profile() {
   return (
     <div className="profile-page">
       <div className="profile-header">
-        <div className="avatar"></div> {/* blank profile picture */}
+        <div className="avatar"></div> {/* placeholder avatar */}
         <h2>{user.username}</h2>
       </div>
 

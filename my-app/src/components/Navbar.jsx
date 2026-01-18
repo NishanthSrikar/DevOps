@@ -2,14 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-export default function Navbar() {
-  const [username, setUsername] = useState("");
-
-  useEffect(() => {
-    const storedUser = JSON.parse(localStorage.getItem("quizUser"));
-    if (storedUser) setUsername(storedUser.username);
-  }, []);
-
+export default function Navbar({ user }) {
   return (
     <nav className="navbar">
       <div className="logo">Quiz Master</div>
@@ -21,8 +14,9 @@ export default function Navbar() {
       </ul>
       <div className="nav-actions">
         <button>Share</button>
-        {username && <Link to="/profile" className="profile">{username}</Link>}
+        {user && <Link to="/profile" className="profile">{user.username}</Link>}
       </div>
     </nav>
   );
 }
+
