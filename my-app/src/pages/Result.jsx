@@ -2,32 +2,33 @@
 import React, { useEffect, useState } from "react";
 import { useLocation, Link, useParams } from "react-router-dom";
 
-export default function Result() {
+export default function Result({ user, setUser }) {
   const { state } = useLocation();
   const { topicId } = useParams();
   const [message, setMessage] = useState("");
 
- // src/pages/Result.jsx
-useEffect(() => {
-  const currentUser = JSON.parse(localStorage.getItem("quizUser"));
-  let allUsers = JSON.parse(localStorage.getItem("quizUsers")) || [];
+  useEffect(() => {
+    if (user) {
+      const updatedUser = { ...user };
+      updatedUser.points += state.score * 100;
 
-  if (currentUser) {
-    currentUser.points += state.score * 100;
-    if (state.score === state.total) {
-      currentUser.stars += 1;
-      setMessage(`🎉 Congratulations ${currentUser.username}! You earned a star in ${topicId}!`);
+      if (state.score === state.total) {
+        updatedUser.stars += 1;
+        setMessage(`🎉 Congratulations ${updatedUser.username}! You earned a star in ${topicId}!`);
+      }
+
+      // Update in quizUsers list
+      let allUsers = JSON.parse(localStorage.getItem("quizUsers")) || [];
+      allUsers = allUsers.map(u =>
+        u.username === updatedUser.username ? updatedUser : u
+      );
+
+      // Save back both
+      setUser(updatedUser);
+      localStorage.setItem("quizUser", JSON.stringify(updatedUser));
+      localStorage.setItem("quizUsers", JSON.stringify(allUsers));
     }
-
-    // Update in list
-    allUsers = allUsers.map(u =>
-      u.username === currentUser.username ? currentUser : u
-    );
-
-    localStorage.setItem("quizUser", JSON.stringify(currentUser));
-    localStorage.setItem("quizUsers", JSON.stringify(allUsers));
-  }
-}, [state, topicId]);
+  }, [state, topicId, user, setUser]);
 
   return (
     <div className="result">

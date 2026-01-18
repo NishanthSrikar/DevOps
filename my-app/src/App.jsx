@@ -30,7 +30,7 @@ function App() {
         <Route path="/" element={<Home user={user} setUser={setUser} />} />
         <Route path="/topics" element={<Topics />} />
         <Route path="/quiz/:topicId/:level" element={<Quiz />} />
-        <Route path="/result/:topicId/:level" element={<Result />} />
+        <Route path="/result/:topicId/:level" element={<Result user={user} setUser={setUser} />} />
         <Route path="/leaderboard" element={<Leaderboard user={user} />} />
         <Route path="/help" element={<Help />} /> 
         <Route path="/profile" element={<Profile user={user} setUser={setUser} />} /> 
