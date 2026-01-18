@@ -1,0 +1,156 @@
+{
+  "beginner": [
+    {
+      "question": "Which extension is used for Python files?",
+      "options": [".py", ".java", ".cpp", ".js"],
+      "answer": ".py"
+    },
+    {
+      "question": "Which keyword is used to define a function in Python?",
+      "options": ["func", "def", "function", "lambda"],
+      "answer": "def"
+    },
+    {
+      "question": "Which data type is used to store True/False values?",
+      "options": ["int", "bool", "str", "float"],
+      "answer": "bool"
+    },
+    {
+      "question": "Which operator is used for exponentiation?",
+      "options": ["^", "**", "exp", "pow"],
+      "answer": "**"
+    },
+    {
+      "question": "Which keyword is used to import modules?",
+      "options": ["include", "import", "require", "module"],
+      "answer": "import"
+    },
+    {
+      "question": "Which function is used to display output?",
+      "options": ["echo()", "print()", "write()", "out()"],
+      "answer": "print()"
+    },
+    {
+      "question": "Which keyword is used for loops?",
+      "options": ["repeat", "loop", "for", "iterate"],
+      "answer": "for"
+    },
+    {
+      "question": "Which keyword is used to handle exceptions?",
+      "options": ["try/except", "catch", "error", "handle"],
+      "answer": "try/except"
+    },
+    {
+      "question": "Which function returns the length of a list?",
+      "options": ["size()", "len()", "count()", "length()"],
+      "answer": "len()"
+    },
+    {
+      "question": "Which keyword is used to define a class?",
+      "options": ["class", "struct", "object", "define"],
+      "answer": "class"
+    }
+  ],
+  "advanced": [
+    {
+      "question": "What is the difference between list and tuple?",
+      "options": ["Lists are mutable, tuples are immutable", "Tuples are faster always", "Lists store only numbers", "No difference"],
+      "answer": "Lists are mutable, tuples are immutable"
+    },
+    {
+      "question": "Which keyword is used to create anonymous functions?",
+      "options": ["lambda", "def", "func", "anon"],
+      "answer": "lambda"
+    },
+    {
+      "question": "What is Python's memory management feature?",
+      "options": ["Garbage collection", "Manual allocation", "Pointers", "Reference counting only"],
+      "answer": "Garbage collection"
+    },
+    {
+      "question": "Which module in Python is used for regular expressions?",
+      "options": ["regex", "re", "regexp", "pattern"],
+      "answer": "re"
+    },
+    {
+      "question": "What is the difference between shallow copy and deep copy in Python?",
+      "options": ["Shallow copies references, deep copies objects", "Deep copy is faster", "Both are identical", "Shallow copy uses recursion"],
+      "answer": "Shallow copies references, deep copies objects"
+    },
+    {
+      "question": "Which Python keyword is used to define generators?",
+      "options": ["yield", "return", "generate", "async"],
+      "answer": "yield"
+    },
+    {
+      "question": "Which built-in function is used to sort iterables?",
+      "options": ["sort()", "sorted()", "order()", "arrange()"],
+      "answer": "sorted()"
+    },
+    {
+      "question": "What is the difference between is and == in Python?",
+      "options": ["is checks identity, == checks equality", "Both are identical", "== checks identity, is checks equality", "is is deprecated"],
+      "answer": "is checks identity, == checks equality"
+    },
+    {
+      "question": "Which Python library is commonly used for data analysis?",
+      "options": ["NumPy", "Pandas", "Matplotlib", "TensorFlow"],
+      "answer": "Pandas"
+    },
+    {
+      "question": "Which Python library is used for numerical computations?",
+      "options": ["NumPy", "Pandas", "Matplotlib", "Scikit-learn"],
+      "answer": "NumPy"
+    },
+    {
+      "question": "Which Python library is used for machine learning?",
+      "options": ["TensorFlow", "Matplotlib", "Flask", "Requests"],
+      "answer": "TensorFlow"
+    },
+    {
+      "question": "Which Python library is used for visualization?",
+      "options": ["Matplotlib", "NumPy", "Pandas", "Scikit-learn"],
+      "answer": "Matplotlib"
+    },
+    {
+      "question": "Which Python library is used for web development?",
+      "options": ["Flask", "Django", "FastAPI", "All of the above"],
+      "answer": "All of the above"
+    },
+    {
+      "question": "Which keyword is used to define asynchronous functions?",
+      "options": ["async", "await", "future", "thread"],
+      "answer": "async"
+    },
+    {
+      "question": "Which keyword is used to wait for asynchronous results?",
+      "options": ["await", "async", "future", "yield"],
+      "answer": "await"
+    },
+    {
+      "question": "Which Python library is used for HTTP requests?",
+      "options": ["Requests", "urllib", "http", "socket"],
+      "answer": "Requests"
+    },
+    {
+      "question": "Which Python library is used for testing?",
+      "options": ["unittest", "pytest", "nose", "All of the above"],
+      "answer": "All of the above"
+    },
+    {
+      "question": "Which Python library is used for scientific computing?",
+      "options": ["SciPy", "NumPy", "Pandas", "Matplotlib"],
+      "answer": "SciPy"
+    },
+    {
+      "question": "Which Python library is used for deep learning?",
+      "options": ["PyTorch", "TensorFlow", "Keras", "All of the above"],
+      "answer": "All of the above"
+    },
+    {
+      "question": "Which Python library is used for natural language processing?",
+      "options": ["NLTK", "spaCy", "Transformers", "All of the above"],
+      "answer": "All of the above"
+    }
+  ]
+}

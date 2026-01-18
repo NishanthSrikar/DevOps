@@ -1,0 +1,156 @@
+{
+  "beginner": [
+    {
+      "question": "What does AI stand for?",
+      "options": ["Artificial Intelligence", "Automated Integration", "Advanced Innovation", "Applied Informatics"],
+      "answer": "Artificial Intelligence"
+    },
+    {
+      "question": "Which of the following is a common programming language for AI?",
+      "options": ["Python", "HTML", "CSS", "SQL"],
+      "answer": "Python"
+    },
+    {
+      "question": "What does ML stand for?",
+      "options": ["Machine Learning", "Memory Logic", "Modern Language", "Model Layer"],
+      "answer": "Machine Learning"
+    },
+    {
+      "question": "Which type of learning uses labeled data?",
+      "options": ["Supervised Learning", "Unsupervised Learning", "Reinforcement Learning", "Deep Learning"],
+      "answer": "Supervised Learning"
+    },
+    {
+      "question": "Which type of learning uses unlabeled data?",
+      "options": ["Supervised Learning", "Unsupervised Learning", "Reinforcement Learning", "Transfer Learning"],
+      "answer": "Unsupervised Learning"
+    },
+    {
+      "question": "Which algorithm is commonly used for classification?",
+      "options": ["K-Nearest Neighbors", "K-Means", "Linear Regression", "Apriori"],
+      "answer": "K-Nearest Neighbors"
+    },
+    {
+      "question": "Which algorithm is commonly used for regression?",
+      "options": ["Linear Regression", "Decision Trees", "Naive Bayes", "K-Means"],
+      "answer": "Linear Regression"
+    },
+    {
+      "question": "Which of the following is a deep learning framework?",
+      "options": ["TensorFlow", "React", "Angular", "Vue"],
+      "answer": "TensorFlow"
+    },
+    {
+      "question": "Which of the following is an application of AI?",
+      "options": ["Speech recognition", "Image classification", "Recommendation systems", "All of the above"],
+      "answer": "All of the above"
+    },
+    {
+      "question": "Which company developed TensorFlow?",
+      "options": ["Google", "Microsoft", "IBM", "Amazon"],
+      "answer": "Google"
+    }
+  ],
+  "advanced": [
+    {
+      "question": "What is overfitting in machine learning?",
+      "options": ["Model performs well on training data but poorly on unseen data", "Model performs poorly on both training and test data", "Model generalizes well", "Model ignores training data"],
+      "answer": "Model performs well on training data but poorly on unseen data"
+    },
+    {
+      "question": "Which technique is used to reduce overfitting?",
+      "options": ["Regularization", "Normalization", "Gradient Descent", "Feature Scaling"],
+      "answer": "Regularization"
+    },
+    {
+      "question": "Which activation function is commonly used in deep neural networks?",
+      "options": ["ReLU", "Sigmoid", "Tanh", "All of the above"],
+      "answer": "ReLU"
+    },
+    {
+      "question": "Which optimization algorithm is widely used in training neural networks?",
+      "options": ["Stochastic Gradient Descent", "K-Means", "Apriori", "PageRank"],
+      "answer": "Stochastic Gradient Descent"
+    },
+    {
+      "question": "What is the vanishing gradient problem?",
+      "options": ["Gradients become too small during backpropagation", "Gradients explode during training", "Gradients are not computed", "Gradients are ignored"],
+      "answer": "Gradients become too small during backpropagation"
+    },
+    {
+      "question": "Which neural network architecture is used for image recognition?",
+      "options": ["Convolutional Neural Networks (CNNs)", "Recurrent Neural Networks (RNNs)", "Transformers", "GANs"],
+      "answer": "Convolutional Neural Networks (CNNs)"
+    },
+    {
+      "question": "Which neural network architecture is used for sequential data?",
+      "options": ["Recurrent Neural Networks (RNNs)", "CNNs", "GANs", "Autoencoders"],
+      "answer": "Recurrent Neural Networks (RNNs)"
+    },
+    {
+      "question": "Which architecture is used for natural language processing tasks?",
+      "options": ["Transformers", "CNNs", "RNNs", "Decision Trees"],
+      "answer": "Transformers"
+    },
+    {
+      "question": "Which algorithm is used for dimensionality reduction?",
+      "options": ["Principal Component Analysis (PCA)", "Linear Regression", "K-Means", "Naive Bayes"],
+      "answer": "Principal Component Analysis (PCA)"
+    },
+    {
+      "question": "Which algorithm is used for clustering?",
+      "options": ["K-Means", "Linear Regression", "Decision Trees", "SVM"],
+      "answer": "K-Means"
+    },
+    {
+      "question": "What is reinforcement learning?",
+      "options": ["Learning by trial and error with rewards", "Learning with labeled data", "Learning with unlabeled data", "Learning with transfer knowledge"],
+      "answer": "Learning by trial and error with rewards"
+    },
+    {
+      "question": "Which algorithm is used in reinforcement learning?",
+      "options": ["Q-Learning", "Linear Regression", "Naive Bayes", "K-Means"],
+      "answer": "Q-Learning"
+    },
+    {
+      "question": "Which loss function is commonly used for classification?",
+      "options": ["Cross-Entropy Loss", "Mean Squared Error", "Hinge Loss", "Absolute Error"],
+      "answer": "Cross-Entropy Loss"
+    },
+    {
+      "question": "Which loss function is commonly used for regression?",
+      "options": ["Mean Squared Error", "Cross-Entropy Loss", "Hinge Loss", "Log Loss"],
+      "answer": "Mean Squared Error"
+    },
+    {
+      "question": "Which algorithm is used for support vector machines?",
+      "options": ["Kernel trick", "Gradient Descent", "Decision Trees", "Naive Bayes"],
+      "answer": "Kernel trick"
+    },
+    {
+      "question": "Which algorithm is used for ensemble learning?",
+      "options": ["Random Forest", "Linear Regression", "Naive Bayes", "K-Means"],
+      "answer": "Random Forest"
+    },
+    {
+      "question": "Which algorithm is used for boosting?",
+      "options": ["AdaBoost", "Random Forest", "K-Means", "SVM"],
+      "answer": "AdaBoost"
+    },
+    {
+      "question": "Which algorithm is used for bagging?",
+      "options": ["Bootstrap Aggregating", "AdaBoost", "Gradient Descent", "SVM"],
+      "answer": "Bootstrap Aggregating"
+    },
+    {
+      "question": "Which algorithm is used for generative modeling?",
+      "options": ["GANs", "CNNs", "RNNs", "Transformers"],
+      "answer": "GANs"
+    },
+    {
+      "question": "Which algorithm is used for anomaly detection?",
+      "options": ["Isolation Forest", "Linear Regression", "Naive Bayes", "K-Means"],
+      "answer": "Isolation Forest"
+    }
+  ]
+}

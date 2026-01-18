@@ -3,41 +3,35 @@ import React from "react";
 import FAQAccordion from "../components/FAQAccordion";
 
 const faqs = [
-  "How do I start taking quizzes?",
-  "What are the difficulty levels?",
-  "Can I retake quizzes?",
-  "How is my score calculated?",
-  "What happens if I exit a quiz midway?",
-  "Are the explanations helpful for learning?",
-  "How does the leaderboard work?",
-  "What topics are available?"
+  { question: "How do I start a quiz?", answer: "Go to the Topics page, select a subject, and choose Beginner or Advanced level." },
+  { question: "How are stars earned?", answer: "You earn a star when you achieve a perfect score in a quiz." },
+  { question: "How does the leaderboard work?", answer: "The leaderboard ranks users by stars earned, showing the highest first." },
+  { question: "Can I edit my profile?", answer: "Yes, click your username in the Navbar to access your profile page where you can edit info." },
+  { question: "How do I log out?", answer: "Go to your Profile page and click the Logout button." }
 ];
 
 export default function Help() {
   return (
-    <div className="help">
-      <h2>Help & Support</h2>
-      <p>Find answers to common questions and get help</p>
+    <div className="help-page">
+      <h2>Help & FAQs</h2>
+      <FAQAccordion faqs={faqs} />
 
-      <section>
-        <h3>Getting Started</h3>
-        <p>Browse topics, select difficulty, and start your quiz journey</p>
-        <h3>Taking Quizzes</h3>
-        <p>Answer questions, get instant feedback, and learn from explanations</p>
-        <h3>Track Progress</h3>
-        <p>View scores, check leaderboard, and improve your ranking</p>
-      </section>
-
-      <section>
-        <h3>Frequently Asked Questions</h3>
-        {faqs.map(q => <FAQAccordion key={q} title={q} />)}
-      </section>
-
-      <section>
-        <h3>Need More Help?</h3>
-        <p>Email: support@quizmaster.com</p>
-        <p>Live Chat: Mon–Fri, 9AM–5PM</p>
-      </section>
+      {/* Modern contact section */}
+      <div className="contact-card">
+        <h3>Need more details?</h3>
+        <p>We’re here to help you out. Reach us anytime through:</p>
+        <div className="contact-options">
+          <a href="mailto:support@quizapp.com" className="contact-link">
+            📧 Email Support
+          </a>
+          <a href="https://quizapp.com/contact" target="_blank" rel="noopener noreferrer" className="contact-link">
+            🌐 Contact Form
+          </a>
+          <a href="https://quizapp.com/community" target="_blank" rel="noopener noreferrer" className="contact-link">
+            💬 Community Forum
+          </a>
+        </div>
+      </div>
     </div>
   );
 }

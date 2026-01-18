@@ -1,0 +1,156 @@
+{
+  "beginner": [
+    {
+      "question": "Which extension is used for Java source files?",
+      "options": [".java", ".class", ".jar", ".js"],
+      "answer": ".java"
+    },
+    {
+      "question": "Which keyword is used to define a class in Java?",
+      "options": ["class", "struct", "object", "define"],
+      "answer": "class"
+    },
+    {
+      "question": "Which method is the entry point of a Java program?",
+      "options": ["start()", "main()", "init()", "program()"],
+      "answer": "main()"
+    },
+    {
+      "question": "Which keyword is used to inherit a class?",
+      "options": ["extends", "inherits", "super", "implements"],
+      "answer": "extends"
+    },
+    {
+      "question": "Which keyword is used to implement an interface?",
+      "options": ["extends", "implements", "interface", "inherit"],
+      "answer": "implements"
+    },
+    {
+      "question": "Which keyword is used to declare constants in Java?",
+      "options": ["const", "final", "static", "constant"],
+      "answer": "final"
+    },
+    {
+      "question": "Which package is imported by default in Java?",
+      "options": ["java.lang", "java.util", "java.io", "java.sql"],
+      "answer": "java.lang"
+    },
+    {
+      "question": "Which symbol is used for single-line comments in Java?",
+      "options": ["//", "/*", "#", "--"],
+      "answer": "//"
+    },
+    {
+      "question": "Which keyword is used to create objects in Java?",
+      "options": ["new", "create", "object", "instance"],
+      "answer": "new"
+    },
+    {
+      "question": "Which keyword is used to stop a loop prematurely?",
+      "options": ["stop", "exit", "break", "return"],
+      "answer": "break"
+    }
+  ],
+  "advanced": [
+    {
+      "question": "What is the difference between JDK and JRE?",
+      "options": ["JDK includes development tools, JRE is runtime environment", "Both are identical", "JRE includes compiler, JDK does not", "JDK is smaller than JRE"],
+      "answer": "JDK includes development tools, JRE is runtime environment"
+    },
+    {
+      "question": "Which keyword is used to prevent method overriding?",
+      "options": ["final", "static", "sealed", "private"],
+      "answer": "final"
+    },
+    {
+      "question": "Which keyword is used to define abstract classes?",
+      "options": ["abstract", "virtual", "interface", "pure"],
+      "answer": "abstract"
+    },
+    {
+      "question": "Which keyword is used to define interfaces?",
+      "options": ["interface", "abstract", "class", "implements"],
+      "answer": "interface"
+    },
+    {
+      "question": "Which collection class allows duplicate elements?",
+      "options": ["Set", "List", "Map", "Queue"],
+      "answer": "List"
+    },
+    {
+      "question": "Which collection class stores key-value pairs?",
+      "options": ["Map", "List", "Set", "Queue"],
+      "answer": "Map"
+    },
+    {
+      "question": "Which exception is thrown when dividing by zero?",
+      "options": ["ArithmeticException", "NullPointerException", "IOException", "ClassCastException"],
+      "answer": "ArithmeticException"
+    },
+    {
+      "question": "Which exception is thrown when accessing a null object?",
+      "options": ["NullPointerException", "ArithmeticException", "IOException", "ClassCastException"],
+      "answer": "NullPointerException"
+    },
+    {
+      "question": "Which keyword is used to handle exceptions?",
+      "options": ["try/catch", "throw", "error", "except"],
+      "answer": "try/catch"
+    },
+    {
+      "question": "Which keyword is used to throw exceptions?",
+      "options": ["throw", "throws", "error", "except"],
+      "answer": "throw"
+    },
+    {
+      "question": "Which keyword is used to declare checked exceptions in method signature?",
+      "options": ["throws", "throw", "error", "except"],
+      "answer": "throws"
+    },
+    {
+      "question": "Which keyword is used to synchronize methods?",
+      "options": ["synchronized", "lock", "threadsafe", "atomic"],
+      "answer": "synchronized"
+    },
+    {
+      "question": "Which keyword is used to create threads?",
+      "options": ["extends Thread / implements Runnable", "new Thread()", "createThread()", "thread"],
+      "answer": "extends Thread / implements Runnable"
+    },
+    {
+      "question": "Which keyword is used to define generic types?",
+      "options": ["<>", "generic", "template", "type"],
+      "answer": "<>"
+    },
+    {
+      "question": "Which keyword is used to define enums?",
+      "options": ["enum", "constant", "final", "static"],
+      "answer": "enum"
+    },
+    {
+      "question": "Which keyword is used to define annotations?",
+      "options": ["@", "annotation", "meta", "decorator"],
+      "answer": "@"
+    },
+    {
+      "question": "Which keyword is used to define static blocks?",
+      "options": ["static", "block", "init", "final"],
+      "answer": "static"
+    },
+    {
+      "question": "Which keyword is used to define inner classes?",
+      "options": ["class inside class", "nested", "inner", "static"],
+      "answer": "class inside class"
+    },
+    {
+      "question": "Which keyword is used to define packages?",
+      "options": ["package", "namespace", "module", "scope"],
+      "answer": "package"
+    },
+    {
+      "question": "Which keyword is used to import classes from packages?",
+      "options": ["import", "include", "require", "use"],
+      "answer": "import"
+    }
+  ]
+}

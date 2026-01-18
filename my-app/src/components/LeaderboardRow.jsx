@@ -7,8 +7,7 @@ export default function LeaderboardRow({ user, rank }) {
     <div className="leaderboard-row">
       <span>#{rank}</span>
       <strong>{user.username}</strong> {badge && <em>({badge})</em>}
-      <span>{user.quizzes} quizzes • {user.avg}% avg</span>
-      <span>{user.points} points</span>
+       <span className="stars">⭐ {user.stars || 0}</span>
     </div>
   );
 }

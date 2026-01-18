@@ -1,0 +1,156 @@
+{
+  "beginner": [
+    {
+      "question": "What is React primarily used for?",
+      "options": ["Building databases", "Creating user interfaces", "Managing servers", "Designing operating systems"],
+      "answer": "Creating user interfaces"
+    },
+    {
+      "question": "React applications are built using which language?",
+      "options": ["Python", "JavaScript", "C++", "Java"],
+      "answer": "JavaScript"
+    },
+    {
+      "question": "What does JSX stand for?",
+      "options": ["JavaScript XML", "Java Syntax Extension", "JSON Xpress", "JavaScript Xtreme"],
+      "answer": "JavaScript XML"
+    },
+    {
+      "question": "Which hook is used to manage state in functional components?",
+      "options": ["useEffect", "useState", "useContext", "useReducer"],
+      "answer": "useState"
+    },
+    {
+      "question": "React is developed and maintained by which company?",
+      "options": ["Google", "Microsoft", "Facebook (Meta)", "Amazon"],
+      "answer": "Facebook (Meta)"
+    },
+    {
+      "question": "What is the root DOM node where React components are rendered?",
+      "options": ["<root>", "<main>", "<div id='app'>", "<div id='root'>"],
+      "answer": "<div id='root'>"
+    },
+    {
+      "question": "Which command is used to create a new React app with Vite?",
+      "options": ["npm create vite@latest", "npx create-react-app", "npm install react", "npm run vite"],
+      "answer": "npm create vite@latest"
+    },
+    {
+      "question": "What is the purpose of props in React?",
+      "options": ["To store local state", "To pass data from parent to child", "To define CSS styles", "To connect to databases"],
+      "answer": "To pass data from parent to child"
+    },
+    {
+      "question": "Which hook is used for side effects like data fetching?",
+      "options": ["useState", "useEffect", "useMemo", "useRef"],
+      "answer": "useEffect"
+    },
+    {
+      "question": "React components can be defined as?",
+      "options": ["Functions or Classes", "Only Classes", "Only Functions", "Modules only"],
+      "answer": "Functions or Classes"
+    }
+  ],
+  "advanced": [
+    {
+      "question": "What is the purpose of React's Virtual DOM?",
+      "options": ["To store user data", "To improve performance by minimizing real DOM updates", "To manage CSS styles", "To replace Redux"],
+      "answer": "To improve performance by minimizing real DOM updates"
+    },
+    {
+      "question": "Which hook is used for performance optimization by memoizing values?",
+      "options": ["useEffect", "useMemo", "useState", "useRef"],
+      "answer": "useMemo"
+    },
+    {
+      "question": "What does useReducer hook provide compared to useState?",
+      "options": ["Simpler state updates", "More complex state management with reducers", "Automatic API calls", "Global state sharing"],
+      "answer": "More complex state management with reducers"
+    },
+    {
+      "question": "What is React Fiber?",
+      "options": ["A CSS library", "A new reconciliation algorithm in React", "A database system", "A testing framework"],
+      "answer": "A new reconciliation algorithm in React"
+    },
+    {
+      "question": "Which hook is used to access context values?",
+      "options": ["useContext", "useEffect", "useReducer", "useMemo"],
+      "answer": "useContext"
+    },
+    {
+      "question": "What is the difference between controlled and uncontrolled components?",
+      "options": ["Controlled components rely on React state, uncontrolled rely on DOM state", "Controlled use Redux, uncontrolled use Context", "Controlled are faster, uncontrolled are slower", "No difference"],
+      "answer": "Controlled components rely on React state, uncontrolled rely on DOM state"
+    },
+    {
+      "question": "What is the purpose of React.Fragment?",
+      "options": ["To wrap multiple elements without adding extra DOM nodes", "To manage CSS styles", "To store state", "To fetch data"],
+      "answer": "To wrap multiple elements without adding extra DOM nodes"
+    },
+    {
+      "question": "Which lifecycle method is replaced by useEffect?",
+      "options": ["componentDidMount / componentDidUpdate / componentWillUnmount", "render", "shouldComponentUpdate", "getDerivedStateFromProps"],
+      "answer": "componentDidMount / componentDidUpdate / componentWillUnmount"
+    },
+    {
+      "question": "What is the purpose of React.StrictMode?",
+      "options": ["To enforce stricter linting rules", "To highlight potential problems in an application", "To enable TypeScript", "To block deprecated APIs"],
+      "answer": "To highlight potential problems in an application"
+    },
+    {
+      "question": "What is the difference between useRef and createRef?",
+      "options": ["useRef persists across renders, createRef creates new ref each render", "Both are identical", "createRef is only for class components", "useRef is only for DOM nodes"],
+      "answer": "useRef persists across renders, createRef creates new ref each render"
+    },
+    {
+      "question": "What is the purpose of React keys in lists?",
+      "options": ["To uniquely identify elements for efficient re-rendering", "To encrypt data", "To manage CSS styles", "To store state"],
+      "answer": "To uniquely identify elements for efficient re-rendering"
+    },
+    {
+      "question": "Which hook is used to create custom reusable logic?",
+      "options": ["Custom hooks (functions starting with 'use')", "useEffect", "useState", "useReducer"],
+      "answer": "Custom hooks (functions starting with 'use')"
+    },
+    {
+      "question": "What is the difference between React.lazy and Suspense?",
+      "options": ["React.lazy loads components lazily, Suspense shows fallback UI while loading", "Both are identical", "Suspense is only for CSS", "React.lazy is only for hooks"],
+      "answer": "React.lazy loads components lazily, Suspense shows fallback UI while loading"
+    },
+    {
+      "question": "What is the purpose of useLayoutEffect?",
+      "options": ["Runs synchronously after DOM mutations", "Runs asynchronously after rendering", "Used for global state", "Used for API calls"],
+      "answer": "Runs synchronously after DOM mutations"
+    },
+    {
+      "question": "What is the difference between Context API and Redux?",
+      "options": ["Context API is simpler for small apps, Redux is more powerful for complex state management", "Both are identical", "Redux is faster always", "Context API is only for styling"],
+      "answer": "Context API is simpler for small apps, Redux is more powerful for complex state management"
+    },
+    {
+      "question": "What is the purpose of React Portals?",
+      "options": ["To render children into a DOM node outside the parent hierarchy", "To manage routing", "To store global state", "To encrypt data"],
+      "answer": "To render children into a DOM node outside the parent hierarchy"
+    },
+    {
+      "question": "What is the difference between PureComponent and React.memo?",
+      "options": ["PureComponent is for class components, React.memo is for functional components", "Both are identical", "React.memo is faster always", "PureComponent is deprecated"],
+      "answer": "PureComponent is for class components, React.memo is for functional components"
+    },
+    {
+      "question": "What is the purpose of useImperativeHandle?",
+      "options": ["To customize the instance value exposed by refs", "To manage CSS styles", "To fetch data", "To store state"],
+      "answer": "To customize the instance value exposed by refs"
+    },
+    {
+      "question": "What is the difference between server-side rendering (SSR) and client-side rendering (CSR)?",
+      "options": ["SSR renders on server before sending HTML, CSR renders in browser", "Both are identical", "CSR is faster always", "SSR is only for APIs"],
+      "answer": "SSR renders on server before sending HTML, CSR renders in browser"
+    },
+    {
+      "question": "What is hydration in React?",
+      "options": ["Attaching event listeners to server-rendered HTML", "Encrypting data", "Fetching APIs", "Managing CSS styles"],
+      "answer": "Attaching event listeners to server-rendered HTML"
+    }
+  ]
+}

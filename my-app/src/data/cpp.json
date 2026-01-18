@@ -1,0 +1,156 @@
+{
+  "beginner": [
+    {
+      "question": "Which extension is commonly used for C++ source files?",
+      "options": [".cpp", ".java", ".py", ".js"],
+      "answer": ".cpp"
+    },
+    {
+      "question": "Which operator is used to access members of a class through a pointer?",
+      "options": [".", "->", "::", "#"],
+      "answer": "->"
+    },
+    {
+      "question": "Which keyword is used to define a constant in C++?",
+      "options": ["const", "static", "final", "constant"],
+      "answer": "const"
+    },
+    {
+      "question": "Which function is the entry point of a C++ program?",
+      "options": ["start()", "main()", "init()", "program()"],
+      "answer": "main()"
+    },
+    {
+      "question": "Which header file is required for input/output operations?",
+      "options": ["<iostream>", "<stdio.h>", "<fstream>", "<stdlib.h>"],
+      "answer": "<iostream>"
+    },
+    {
+      "question": "Which symbol is used for single-line comments?",
+      "options": ["//", "/*", "#", "--"],
+      "answer": "//"
+    },
+    {
+      "question": "Which operator is used for multiplication?",
+      "options": ["*", "x", "mul", "%"],
+      "answer": "*"
+    },
+    {
+      "question": "Which keyword is used to create objects from a class?",
+      "options": ["new", "class", "object", "create"],
+      "answer": "new"
+    },
+    {
+      "question": "Which loop is guaranteed to run at least once?",
+      "options": ["for", "while", "do-while", "foreach"],
+      "answer": "do-while"
+    },
+    {
+      "question": "Which keyword is used to inherit a class?",
+      "options": ["extends", "inherits", "public/private/protected", "super"],
+      "answer": "public/private/protected"
+    }
+  ],
+  "advanced": [
+    {
+      "question": "What is the difference between shallow copy and deep copy?",
+      "options": ["Shallow copies pointers, deep copies actual data", "Both are identical", "Deep copy is faster", "Shallow copy uses recursion"],
+      "answer": "Shallow copies pointers, deep copies actual data"
+    },
+    {
+      "question": "Which feature of C++ allows function overloading?",
+      "options": ["Polymorphism", "Encapsulation", "Inheritance", "Abstraction"],
+      "answer": "Polymorphism"
+    },
+    {
+      "question": "What is the purpose of the 'virtual' keyword?",
+      "options": ["To allow overriding in derived classes", "To create constants", "To allocate memory", "To define macros"],
+      "answer": "To allow overriding in derived classes"
+    },
+    {
+      "question": "Which C++11 feature allows moving resources instead of copying?",
+      "options": ["Move semantics", "Smart pointers", "Templates", "Lambda functions"],
+      "answer": "Move semantics"
+    },
+    {
+      "question": "Which smart pointer automatically deletes the object when no references remain?",
+      "options": ["unique_ptr", "shared_ptr", "weak_ptr", "auto_ptr"],
+      "answer": "shared_ptr"
+    },
+    {
+      "question": "What is the difference between 'struct' and 'class' in C++?",
+      "options": ["Default access: struct is public, class is private", "Structs cannot have functions", "Classes cannot have data members", "No difference"],
+      "answer": "Default access: struct is public, class is private"
+    },
+    {
+      "question": "Which operator must be overloaded to use objects in STL containers?",
+      "options": ["==", "=", "<", "+"],
+      "answer": "<"
+    },
+    {
+      "question": "Which keyword prevents a class from being inherited?",
+      "options": ["final", "sealed", "static", "restrict"],
+      "answer": "final"
+    },
+    {
+      "question": "What is RAII in C++?",
+      "options": ["Resource Acquisition Is Initialization", "Random Access Internal Index", "Runtime Allocation Inheritance Implementation", "Recursive Algorithm In Iteration"],
+      "answer": "Resource Acquisition Is Initialization"
+    },
+    {
+      "question": "Which STL container provides constant-time insertion/removal at both ends?",
+      "options": ["vector", "deque", "list", "map"],
+      "answer": "deque"
+    },
+    {
+      "question": "Which keyword is used to declare templates?",
+      "options": ["template", "generic", "typename", "class"],
+      "answer": "template"
+    },
+    {
+      "question": "Which operator is used to allocate memory dynamically?",
+      "options": ["malloc", "new", "alloc", "create"],
+      "answer": "new"
+    },
+    {
+      "question": "Which operator is used to free memory allocated with new?",
+      "options": ["delete", "free", "remove", "dispose"],
+      "answer": "delete"
+    },
+    {
+      "question": "Which C++ feature allows defining functions inside classes?",
+      "options": ["Inline functions", "Macros", "Templates", "Namespaces"],
+      "answer": "Inline functions"
+    },
+    {
+      "question": "Which keyword is used to handle exceptions?",
+      "options": ["try/catch", "throw", "error", "except"],
+      "answer": "try/catch"
+    },
+    {
+      "question": "Which STL container stores unique keys in sorted order?",
+      "options": ["set", "map", "vector", "list"],
+      "answer": "set"
+    },
+    {
+      "question": "Which keyword is used to define namespaces?",
+      "options": ["namespace", "package", "module", "scope"],
+      "answer": "namespace"
+    },
+    {
+      "question": "Which feature allows defining multiple functions with the same name but different parameters?",
+      "options": ["Function overloading", "Operator overloading", "Inheritance", "Encapsulation"],
+      "answer": "Function overloading"
+    },
+    {
+      "question": "Which keyword is used to create abstract classes?",
+      "options": ["virtual = 0", "abstract", "interface", "pure"],
+      "answer": "virtual = 0"
+    },
+    {
+      "question": "Which STL container provides key-value pairs?",
+      "options": ["map", "vector", "list", "set"],
+      "answer": "map"
+    }
+  ]
+}

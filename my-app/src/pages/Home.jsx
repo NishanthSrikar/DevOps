@@ -1,69 +1,78 @@
 // src/pages/Home.jsx
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 export default function Home() {
-  const [user, setUser] = useState(null);
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
+  const [currentUser, setCurrentUser] = useState(null);
+  const [topUsers, setTopUsers] = useState([]);
 
   useEffect(() => {
-    // Load user from localStorage if already logged in
-    const storedUser = localStorage.getItem("quizUser");
-    if (storedUser) setUser(JSON.parse(storedUser));
+    // Load logged-in user
+    const user = JSON.parse(localStorage.getItem("quizUser"));
+    setCurrentUser(user);
+
+    // Load leaderboard users
+    const storedUsers = JSON.parse(localStorage.getItem("quizUsers")) || [];
+    const sorted = [...storedUsers].sort((a, b) => (b.stars || 0) - (a.stars || 0));
+    setTopUsers(sorted.slice(0, 3)); // top 3
   }, []);
-
-  // src/pages/Home.jsx (login part)
-const handleLogin = (e) => {
-  e.preventDefault();
-  if (username && password) {
-    const userData = { username, password, stars: 0, points: 0 };
-
-    // Get existing users
-    const existingUsers = JSON.parse(localStorage.getItem("quizUsers")) || [];
-
-    // Check if user already exists
-    const found = existingUsers.find(u => u.username === username);
-    if (!found) {
-      existingUsers.push(userData);
-    }
-
-    localStorage.setItem("quizUsers", JSON.stringify(existingUsers));
-    localStorage.setItem("quizUser", JSON.stringify(userData)); // current session user
-    setUser(userData);
-  } else {
-    alert("Please enter username and password");
-  }
-};
-
-  if (!user) {
-    return (
-      <div className="login">
-        <h2>Login to Quiz Master</h2>
-        <form onSubmit={handleLogin}>
-          <input
-            type="text"
-            placeholder="Username"
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
-          />
-          <input
-            type="password"
-            placeholder="Password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-          />
-          <button type="submit">Login</button>
-        </form>
-      </div>
-    );
-  }
 
   return (
     <div className="home">
-      <h1>Welcome to Quiz Master, {user.username}!</h1>
-      <p>Test your knowledge, track progress, and master programming concepts through interactive quizzes.</p>
-      <Link to="/topics"><button>Start Taking Quizzes</button></Link>
+      {/* Hero Section */}
+      <section className="hero">
+        <h1>Welcome to QuizMaster 🎓</h1>
+        {currentUser ? (
+          <p>Hello, <strong>{currentUser.username}</strong>! Ready to earn more stars?</p>
+        ) : (
+          <p>Sharpen your skills with interactive quizzes across multiple topics.</p>
+        )}
+        <Link to="/topics">
+          <button className="cta-btn">Start Learning</button>
+        </Link>
+      </section>
+
+      {/* Features Section */}
+      <section className="features">
+        <h2>Why QuizMaster?</h2>
+        <div className="feature-grid">
+          <div className="feature-card">
+            <h3>📚 Diverse Topics</h3>
+            <p>From Cyber Security to Quantum Computing, explore quizzes tailored to your interests.</p>
+          </div>
+          <div className="feature-card">
+            <h3>⭐ Earn Stars</h3>
+            <p>Perfect scores earn stars — track your progress and show off your achievements.</p>
+          </div>
+          <div className="feature-card">
+            <h3>🏆 Leaderboard</h3>
+            <p>Compete with friends and peers. See who’s leading in stars earned.</p>
+          </div>
+          <div className="feature-card">
+            <h3>👤 Personalized Profile</h3>
+            <p>Edit your profile, choose avatars, and keep track of your quiz history.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Quick Links Section */}
+      <section className="quick-links">
+        <h2>Quick Links</h2>
+        <div className="links-grid">
+          <Link to="/topics"><button>📖 Topics</button></Link>
+          <Link to="/leaderboard"><button>🏆 Leaderboard</button></Link>
+          <Link to="/profile"><button>👤 Profile</button></Link>
+          <Link to="/help"><button>❓ Help</button></Link>
+        </div>
+      </section>
+
+      {/* Call to Action */}
+      <section className="cta">
+        <h2>Ready to test your knowledge?</h2>
+        <Link to="/topics">
+          <button className="cta-btn">Choose a Topic</button>
+        </Link>
+      </section>
     </div>
   );
 }

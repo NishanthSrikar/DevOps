@@ -1,0 +1,156 @@
+{
+  "beginner": [
+    {
+      "question": "Which data structure uses FIFO (First In First Out)?",
+      "options": ["Stack", "Queue", "Tree", "Graph"],
+      "answer": "Queue"
+    },
+    {
+      "question": "Which data structure uses LIFO (Last In First Out)?",
+      "options": ["Stack", "Queue", "Array", "Linked List"],
+      "answer": "Stack"
+    },
+    {
+      "question": "Which data structure is used to implement recursion?",
+      "options": ["Queue", "Stack", "Array", "Graph"],
+      "answer": "Stack"
+    },
+    {
+      "question": "Which data structure is used to store elements in contiguous memory?",
+      "options": ["Array", "Linked List", "Tree", "Graph"],
+      "answer": "Array"
+    },
+    {
+      "question": "Which data structure consists of nodes connected by pointers?",
+      "options": ["Array", "Linked List", "Stack", "Queue"],
+      "answer": "Linked List"
+    },
+    {
+      "question": "Which data structure is hierarchical?",
+      "options": ["Tree", "Array", "Stack", "Queue"],
+      "answer": "Tree"
+    },
+    {
+      "question": "Which data structure is used to represent relationships between entities?",
+      "options": ["Graph", "Array", "Stack", "Queue"],
+      "answer": "Graph"
+    },
+    {
+      "question": "Which traversal method visits nodes level by level in a tree?",
+      "options": ["Inorder", "Preorder", "Postorder", "Level Order"],
+      "answer": "Level Order"
+    },
+    {
+      "question": "Which data structure is best for implementing undo operations?",
+      "options": ["Stack", "Queue", "Array", "Graph"],
+      "answer": "Stack"
+    },
+    {
+      "question": "Which data structure is used in breadth-first search?",
+      "options": ["Stack", "Queue", "Array", "Tree"],
+      "answer": "Queue"
+    }
+  ],
+  "advanced": [
+    {
+      "question": "What is the time complexity of searching in a balanced binary search tree?",
+      "options": ["O(1)", "O(log n)", "O(n)", "O(n log n)"],
+      "answer": "O(log n)"
+    },
+    {
+      "question": "Which data structure is used in Dijkstra's shortest path algorithm?",
+      "options": ["Stack", "Priority Queue", "Array", "Linked List"],
+      "answer": "Priority Queue"
+    },
+    {
+      "question": "Which data structure is used in Depth First Search?",
+      "options": ["Queue", "Stack", "Array", "Heap"],
+      "answer": "Stack"
+    },
+    {
+      "question": "Which data structure is used to detect cycles in a graph?",
+      "options": ["Disjoint Set (Union-Find)", "Stack", "Queue", "Array"],
+      "answer": "Disjoint Set (Union-Find)"
+    },
+    {
+      "question": "Which data structure is used to implement a priority queue?",
+      "options": ["Heap", "Stack", "Array", "Linked List"],
+      "answer": "Heap"
+    },
+    {
+      "question": "Which traversal method of a binary search tree gives sorted order?",
+      "options": ["Preorder", "Inorder", "Postorder", "Level Order"],
+      "answer": "Inorder"
+    },
+    {
+      "question": "Which data structure is used in Kruskal's algorithm?",
+      "options": ["Disjoint Set", "Stack", "Queue", "Heap"],
+      "answer": "Disjoint Set"
+    },
+    {
+      "question": "Which data structure is used in Prim's algorithm?",
+      "options": ["Priority Queue", "Stack", "Queue", "Array"],
+      "answer": "Priority Queue"
+    },
+    {
+      "question": "Which data structure is used in Huffman coding?",
+      "options": ["Heap", "Stack", "Queue", "Array"],
+      "answer": "Heap"
+    },
+    {
+      "question": "Which data structure is used in backtracking algorithms?",
+      "options": ["Stack", "Queue", "Array", "Graph"],
+      "answer": "Stack"
+    },
+    {
+      "question": "Which data structure is used in LRU cache implementation?",
+      "options": ["HashMap + Doubly Linked List", "Stack", "Queue", "Array"],
+      "answer": "HashMap + Doubly Linked List"
+    },
+    {
+      "question": "Which data structure is used in topological sorting?",
+      "options": ["Stack", "Queue", "Heap", "Array"],
+      "answer": "Stack"
+    },
+    {
+      "question": "Which data structure is used in dynamic programming to store subproblem results?",
+      "options": ["Array/Table", "Stack", "Queue", "Graph"],
+      "answer": "Array/Table"
+    },
+    {
+      "question": "Which data structure is used in implementing adjacency list of a graph?",
+      "options": ["Array of Linked Lists", "Matrix", "Stack", "Queue"],
+      "answer": "Array of Linked Lists"
+    },
+    {
+      "question": "Which data structure is used in implementing adjacency matrix of a graph?",
+      "options": ["2D Array", "Linked List", "Stack", "Queue"],
+      "answer": "2D Array"
+    },
+    {
+      "question": "Which data structure is used in implementing recursion stack?",
+      "options": ["Stack", "Queue", "Array", "Heap"],
+      "answer": "Stack"
+    },
+    {
+      "question": "Which data structure is used in implementing heapsort?",
+      "options": ["Heap", "Stack", "Queue", "Array"],
+      "answer": "Heap"
+    },
+    {
+      "question": "Which data structure is used in implementing breadth-first traversal of a graph?",
+      "options": ["Queue", "Stack", "Array", "Heap"],
+      "answer": "Queue"
+    },
+    {
+      "question": "Which data structure is used in implementing depth-first traversal of a graph?",
+      "options": ["Stack", "Queue", "Array", "Heap"],
+      "answer": "Stack"
+    },
+    {
+      "question": "Which data structure is used in implementing Dijkstra’s algorithm efficiently?",
+      "options": ["Min-Heap (Priority Queue)", "Stack", "Queue", "Array"],
+      "answer": "Min-Heap (Priority Queue)"
+    }
+  ]
+}
