@@ -19,7 +19,7 @@ export default function Home({ user, setUser }) {
         {currentUser ? (
           <p>Hello, <strong>{currentUser.username}</strong>! Ready to earn more stars?</p>
         ) : (
-          <p>Sharpen your skills with interactive quizzes across multiple topics.</p>
+          <p>Sharpen your skills and knowledge with interactive quizzes across multiple topics.</p>
         )}
         <Link to="/topics">
           <button className="cta-btn">Start Learning</button>
