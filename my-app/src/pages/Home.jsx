@@ -15,16 +15,16 @@ export default function Home({ user, setUser }) {
     <div className="home">
       {/* Hero Section */}
       <section className="hero">
-        <h1>Welcome to QuizMaster 🎓</h1>
-        {currentUser ? (
-          <p>Hello, <strong>{currentUser.username}</strong>! Ready to earn more stars?</p>
-        ) : (
-          <p>Sharpen your skills and knowledge with interactive quizzes across multiple topics.</p>
-        )}
-        <Link to="/topics">
-          <button className="cta-btn">Start Learning</button>
-        </Link>
-      </section>
+  <h1>Welcome to QuizMaster 🎓</h1>
+  {user ? (
+    <p>Hello, <strong>{user.username}</strong>! Ready to earn more stars?</p>
+  ) : (
+    <p>Sharpen your skills and knowledge with interactive quizzes across multiple topics.</p>
+  )}
+  <Link to="/topics">
+    <button className="cta-btn">Start Learning</button>
+  </Link>
+</section>
 
       {/* Features Section */}
       <section className="features">
