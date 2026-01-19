@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 export default function Home({ user, setUser }) {
   const [topUsers, setTopUsers] = useState([]);
+  const [showLogin, setShowLogin] = useState(false);
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
@@ -16,12 +17,10 @@ export default function Home({ user, setUser }) {
   const handleLogin = () => {
     if (!username || !password) return;
 
-    // Check if user already exists
     let allUsers = JSON.parse(localStorage.getItem("quizUsers")) || [];
     let existingUser = allUsers.find(u => u.username === username);
 
     if (existingUser) {
-      // Simple password check
       if (existingUser.password === password) {
         setUser(existingUser);
         localStorage.setItem("quizUser", JSON.stringify(existingUser));
@@ -29,7 +28,6 @@ export default function Home({ user, setUser }) {
         alert("Incorrect password!");
       }
     } else {
-      // Create new user
       const newUser = { username, password, stars: 0, points: 0 };
       allUsers.push(newUser);
       setUser(newUser);
@@ -39,17 +37,37 @@ export default function Home({ user, setUser }) {
 
     setUsername("");
     setPassword("");
+    setShowLogin(false); // close modal after login
   };
 
   return (
     <div className="home">
+      {/* Hero Section */}
       <section className="hero">
         <h1>Welcome to QuizMaster 🎓</h1>
         {user ? (
           <p>Hello, <strong>{user.username}</strong>! Ready to earn more stars?</p>
         ) : (
-          <div className="login-form">
-            <p>Login or create a new account:</p>
+          <p>Sharpen your skills and knowledge with interactive quizzes across multiple topics.</p>
+        )}
+        <div>
+          {!user && (
+            <button onClick={() => setShowLogin(true)} className="cta-btn">
+              Login / Sign Up
+            </button>
+          )}
+        </div>
+        <Link to="/topics">
+          <button className="cta-btn">Start Learning</button>
+        </Link>
+      </section>
+
+      {/* Login Modal */}
+      {showLogin && (
+        <div className="login-modal">
+          <div className="login-box">
+            <button className="close-btn" onClick={() => setShowLogin(false)}>✖</button>
+            <h2>Login to QuizMaster</h2>
             <input
               type="text"
               placeholder="Username"
@@ -64,11 +82,8 @@ export default function Home({ user, setUser }) {
             />
             <button onClick={handleLogin}>Login</button>
           </div>
-        )}
-        <Link to="/topics">
-          <button className="cta-btn">Start Learning</button>
-        </Link>
-      </section>
+        </div>
+      )}
 
       {/* Features Section */}
       <section className="features">
