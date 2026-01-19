@@ -80,6 +80,7 @@ export default function Home({ user, setUser }) {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             />
+            <br/>
             <button onClick={handleLogin}>Login</button>
           </div>
         </div>

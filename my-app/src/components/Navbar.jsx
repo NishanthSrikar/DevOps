@@ -14,6 +14,13 @@ export default function Navbar({ user }) {
       </ul>
       <div className="nav-actions">
         <button>Share</button>
+        <div>
+          {!user && (
+            <button onClick={() => setShowLogin(true)} className="cta-btn">
+              Login / Sign Up
+            </button>
+          )}
+        </div>
         {user && <Link to="/profile" className="profile">{user.username}</Link>}
       </div>
     </nav>
