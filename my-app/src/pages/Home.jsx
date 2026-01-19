@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 
 export default function Home({ user, setUser }) {
   const [topUsers, setTopUsers] = useState([]);
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
 
   useEffect(() => {
     const storedUsers = JSON.parse(localStorage.getItem("quizUsers")) || [];
@@ -11,20 +13,62 @@ export default function Home({ user, setUser }) {
     setTopUsers(sorted.slice(0, 3));
   }, []);
 
+  const handleLogin = () => {
+    if (!username || !password) return;
+
+    // Check if user already exists
+    let allUsers = JSON.parse(localStorage.getItem("quizUsers")) || [];
+    let existingUser = allUsers.find(u => u.username === username);
+
+    if (existingUser) {
+      // Simple password check
+      if (existingUser.password === password) {
+        setUser(existingUser);
+        localStorage.setItem("quizUser", JSON.stringify(existingUser));
+      } else {
+        alert("Incorrect password!");
+      }
+    } else {
+      // Create new user
+      const newUser = { username, password, stars: 0, points: 0 };
+      allUsers.push(newUser);
+      setUser(newUser);
+      localStorage.setItem("quizUser", JSON.stringify(newUser));
+      localStorage.setItem("quizUsers", JSON.stringify(allUsers));
+    }
+
+    setUsername("");
+    setPassword("");
+  };
+
   return (
     <div className="home">
-      {/* Hero Section */}
       <section className="hero">
-  <h1>Welcome to QuizMaster 🎓</h1>
-  {user ? (
-    <p>Hello, <strong>{user.username}</strong>! Ready to earn more stars?</p>
-  ) : (
-    <p>Sharpen your skills and knowledge with interactive quizzes across multiple topics.</p>
-  )}
-  <Link to="/topics">
-    <button className="cta-btn">Start Learning</button>
-  </Link>
-</section>
+        <h1>Welcome to QuizMaster 🎓</h1>
+        {user ? (
+          <p>Hello, <strong>{user.username}</strong>! Ready to earn more stars?</p>
+        ) : (
+          <div className="login-form">
+            <p>Login or create a new account:</p>
+            <input
+              type="text"
+              placeholder="Username"
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
+            />
+            <input
+              type="password"
+              placeholder="Password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+            />
+            <button onClick={handleLogin}>Login</button>
+          </div>
+        )}
+        <Link to="/topics">
+          <button className="cta-btn">Start Learning</button>
+        </Link>
+      </section>
 
       {/* Features Section */}
       <section className="features">
