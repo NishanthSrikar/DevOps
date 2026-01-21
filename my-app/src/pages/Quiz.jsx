@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import Button from "../components/Button";
 
-// Import all topic data
 import aimlData from "../data/aiml.json";
 import dsData from "../data/ds.json";
 import javaData from "../data/java.json";
@@ -14,10 +13,9 @@ import pythonData from "../data/python.json";
 import cyberData from "../data/cyber_security.json";
 
 export default function Quiz() {
-  const { topicId, level } = useParams(); // topicId = aiml, ds, java, quantum, etc. | level = beginner/advanced
+  const { topicId, level } = useParams();
   const navigate = useNavigate();
 
-  // Map topicId to dataset
   const topicMap = {
     aiml: aimlData,
     ds: dsData,
@@ -32,20 +30,48 @@ export default function Quiz() {
   const questions = topicMap[topicId]?.[level] || [];
   const [current, setCurrent] = useState(0);
   const [score, setScore] = useState(0);
+  const [selectedOptions, setSelectedOptions] = useState([]);
+  const [submitted, setSubmitted] = useState(false);
+  const [isCorrect, setIsCorrect] = useState(false);
 
-  const handleAnswer = (option) => {
-    if (option === questions[current].answer) {
-      setScore(score + 1);
+  const currentQuestion = questions[current];
+
+  const toggleOption = (option) => {
+    if (submitted) return; // prevent changes after submit
+    if (selectedOptions.includes(option)) {
+      setSelectedOptions(selectedOptions.filter(o => o !== option));
+    } else {
+      setSelectedOptions([...selectedOptions, option]);
     }
+  };
+
+  const handleSubmit = () => {
+    let correct = false;
+
+    if (currentQuestion.answer) {
+      correct = selectedOptions.length === 1 && selectedOptions[0] === currentQuestion.answer;
+    } else if (currentQuestion.answers) {
+      const correctSet = new Set(currentQuestion.answers);
+      const selectedSet = new Set(selectedOptions);
+      correct =
+        correctSet.size === selectedSet.size &&
+        [...correctSet].every(ans => selectedSet.has(ans));
+    }
+
+    setIsCorrect(correct);
+    if (correct) setScore(score + 1);
+    setSubmitted(true);
+  };
+
+  const handleNext = () => {
     if (current + 1 < questions.length) {
       setCurrent(current + 1);
+      setSelectedOptions([]);
+      setSubmitted(false);
+      setIsCorrect(false);
     } else {
-      // Navigate to result page with score
       navigate(`/result/${topicId}/${level}`, {
-        state: {
-          score: score + (option === questions[current].answer ? 1 : 0),
-          total: questions.length
-        }
+        state: { score, total: questions.length }
       });
     }
   };
@@ -58,14 +84,47 @@ export default function Quiz() {
     <div className="quiz">
       <h2>Topic: {topicId.toUpperCase()} ({level})</h2>
       <h3>Question {current + 1} of {questions.length}</h3>
-      <p>{questions[current].question}</p>
+      <p>{currentQuestion.question}</p>
       <div className="options">
-        {questions[current].options.map((opt, i) => (
-          <Button key={i} onClick={() => handleAnswer(opt)}>
-            {opt}
-          </Button>
-        ))}
+        {currentQuestion.options.map((opt, i) => {
+          let className = "";
+          if (submitted) {
+            if (currentQuestion.answer) {
+              // single-answer feedback
+              if (opt === currentQuestion.answer) className = "correct";
+              else if (selectedOptions.includes(opt)) className = "wrong";
+            } else if (currentQuestion.answers) {
+              // multiple-answer feedback
+              if (currentQuestion.answers.includes(opt)) className = "correct";
+              else if (selectedOptions.includes(opt)) className = "wrong";
+            }
+          } else if (selectedOptions.includes(opt)) {
+            className = "selected";
+          }
+
+          return (
+            <Button
+              key={i}
+              onClick={() => toggleOption(opt)}
+              className={className}
+            >
+              {opt}
+            </Button>
+          );
+        })}
       </div>
+      <div className="actions">
+        {!submitted ? (
+          <Button onClick={handleSubmit}>Submit</Button>
+        ) : (
+          <Button onClick={handleNext}>Next</Button>
+        )}
+      </div>
+      {submitted && (
+        <p className={isCorrect ? "feedback-correct" : "feedback-wrong"}>
+          {isCorrect ? "✅ Correct!" : "❌ Incorrect"}
+        </p>
+      )}
     </div>
   );
 }

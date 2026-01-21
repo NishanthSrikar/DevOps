@@ -1,156 +1,156 @@
 {
   "beginner": [
     {
-      "question": "What is the basic unit of quantum information?",
-      "options": ["Bit", "Qubit", "Byte", "Quantum gate"],
-      "answer": "Qubit"
+      "question": "Which of these are fundamental quantum particles?",
+      "options": ["Electron", "Photon", "Proton", "Banana"],
+      "answers": ["Electron", "Photon", "Proton"]
     },
     {
-      "question": "Which principle allows qubits to exist in multiple states at once?",
-      "options": ["Superposition", "Entanglement", "Interference", "Decoherence"],
-      "answer": "Superposition"
+      "question": "What does 'Qubit' stand for?",
+      "options": ["Quantum Bit", "Quick Bit", "Quality Bit", "Question Bit"],
+      "answer": "Quantum Bit"
     },
     {
-      "question": "Which company developed the Qiskit quantum computing framework?",
-      "options": ["Google", "IBM", "Microsoft", "Intel"],
-      "answer": "IBM"
+      "question": "Which of these are properties of qubits?",
+      "options": ["Superposition", "Entanglement", "Classical determinism", "Wave-particle duality"],
+      "answers": ["Superposition", "Entanglement", "Wave-particle duality"]
     },
     {
-      "question": "What is the difference between a classical bit and a qubit?",
-      "options": ["Bit is 0 or 1, qubit can be both simultaneously", "Qubit is faster always", "Bit stores text, qubit stores numbers", "No difference"],
-      "answer": "Bit is 0 or 1, qubit can be both simultaneously"
+      "question": "Which of these are quantum gates?",
+      "options": ["Hadamard", "Pauli-X", "CNOT", "BubbleSort"],
+      "answers": ["Hadamard", "Pauli-X", "CNOT"]
     },
     {
-      "question": "Which phenomenon links two qubits so that their states are correlated?",
-      "options": ["Superposition", "Entanglement", "Interference", "Measurement"],
-      "answer": "Entanglement"
+      "question": "Which of these is the classical counterpart of a qubit?",
+      "options": ["Bit", "Byte", "Register", "Word"],
+      "answer": "Bit"
     },
     {
-      "question": "Which quantum algorithm is famous for factoring large numbers?",
-      "options": ["Grover's algorithm", "Shor's algorithm", "Deutsch's algorithm", "Simon's algorithm"],
-      "answer": "Shor's algorithm"
+      "question": "Which of these are examples of quantum phenomena?",
+      "options": ["Superposition", "Entanglement", "Decoherence", "Sorting arrays"],
+      "answers": ["Superposition", "Entanglement", "Decoherence"]
     },
     {
-      "question": "Which quantum algorithm is used for searching unsorted databases?",
-      "options": ["Grover's algorithm", "Shor's algorithm", "Simon's algorithm", "Quantum Fourier Transform"],
-      "answer": "Grover's algorithm"
+      "question": "Which of these are measurement outcomes of a qubit?",
+      "options": ["0", "1", "Both simultaneously", "Banana"],
+      "answers": ["0", "1"]
     },
     {
-      "question": "What happens to a qubit when it is measured?",
-      "options": ["It collapses to 0 or 1", "It stays in superposition", "It becomes entangled", "It disappears"],
-      "answer": "It collapses to 0 or 1"
+      "question": "Which of these are common quantum computing models?",
+      "options": ["Gate-based", "Adiabatic", "Topological", "Spreadsheet"],
+      "answers": ["Gate-based", "Adiabatic", "Topological"]
     },
     {
-      "question": "Which field of mathematics is essential for quantum computing?",
-      "options": ["Linear algebra", "Calculus", "Statistics", "Geometry"],
-      "answer": "Linear algebra"
+      "question": "Which of these are potential applications of quantum computing?",
+      "options": ["Cryptography", "Optimization", "Drug discovery", "Cooking recipes"],
+      "answers": ["Cryptography", "Optimization", "Drug discovery"]
     },
     {
-      "question": "Which physical system can be used to implement qubits?",
-      "options": ["Photons", "Electrons", "Superconducting circuits", "All of the above"],
-      "answer": "All of the above"
+      "question": "Which of these are classical computing limitations addressed by quantum computing?",
+      "options": ["Factorization", "Simulation of quantum systems", "Optimization problems", "Sorting arrays"],
+      "answers": ["Factorization", "Simulation of quantum systems", "Optimization problems"]
     }
   ],
   "advanced": [
     {
-      "question": "What is the purpose of the Hadamard gate?",
-      "options": ["To create superposition", "To entangle qubits", "To measure qubits", "To reset qubits"],
-      "answer": "To create superposition"
+      "question": "Which of these are quantum error correction codes?",
+      "options": ["Shor code", "Steane code", "Surface code", "BubbleSort"],
+      "answers": ["Shor code", "Steane code", "Surface code"]
     },
     {
-      "question": "Which gate is used to entangle two qubits?",
-      "options": ["CNOT gate", "Hadamard gate", "Pauli-X gate", "Toffoli gate"],
-      "answer": "CNOT gate"
+      "question": "Which of these are quantum algorithms?",
+      "options": ["Shor's algorithm", "Grover's algorithm", "Dijkstra's algorithm", "Bellman-Ford"],
+      "answers": ["Shor's algorithm", "Grover's algorithm"]
     },
     {
-      "question": "What is quantum decoherence?",
-      "options": ["Loss of quantum information due to environment", "Creation of entanglement", "Superposition of states", "Error correction"],
-      "answer": "Loss of quantum information due to environment"
+      "question": "Which of these are properties of entangled states?",
+      "options": ["Non-local correlations", "Measurement dependence", "Classical independence", "Wave collapse"],
+      "answers": ["Non-local correlations", "Measurement dependence"]
     },
     {
-      "question": "Which algorithm provides quadratic speedup for database search?",
-      "options": ["Grover's algorithm", "Shor's algorithm", "Quantum Fourier Transform", "Simon's algorithm"],
-      "answer": "Grover's algorithm"
+      "question": "Which of these are universal quantum gates?",
+      "options": ["Hadamard", "CNOT", "T-gate", "BubbleSort"],
+      "answers": ["Hadamard", "CNOT", "T-gate"]
     },
     {
-      "question": "What is the purpose of the Quantum Fourier Transform?",
-      "options": ["Used in Shor's algorithm for factoring", "Used for entanglement", "Used for measurement", "Used for error correction"],
-      "answer": "Used in Shor's algorithm for factoring"
+      "question": "Which of these are challenges in quantum computing?",
+      "options": ["Decoherence", "Noise", "Error rates", "Sorting arrays"],
+      "answers": ["Decoherence", "Noise", "Error rates"]
     },
     {
-      "question": "Which error correction method is used in quantum computing?",
-      "options": ["Shor code", "Steane code", "Surface code", "All of the above"],
-      "answer": "All of the above"
+      "question": "Which of these are quantum complexity classes?",
+      "options": ["BQP", "QMA", "NP", "P"],
+      "answers": ["BQP", "QMA"]
     },
     {
-      "question": "What is the difference between gate-based and annealing quantum computers?",
-      "options": ["Gate-based use quantum circuits, annealing solves optimization problems", "Annealing is faster always", "Gate-based are classical", "No difference"],
-      "answer": "Gate-based use quantum circuits, annealing solves optimization problems"
+      "question": "Which of these are quantum simulation applications?",
+      "options": ["Molecular modeling", "Material science", "Drug discovery", "Sorting arrays"],
+      "answers": ["Molecular modeling", "Material science", "Drug discovery"]
     },
     {
-      "question": "Which company developed the D-Wave quantum annealer?",
-      "options": ["IBM", "Google", "D-Wave Systems", "Microsoft"],
-      "answer": "D-Wave Systems"
+      "question": "Which of these are hybrid quantum-classical algorithms?",
+      "options": ["Variational Quantum Eigensolver (VQE)", "Quantum Approximate Optimization Algorithm (QAOA)", "BubbleSort", "DFS"],
+      "answers": ["Variational Quantum Eigensolver (VQE)", "Quantum Approximate Optimization Algorithm (QAOA)"]
     },
     {
-      "question": "What is the Bloch sphere used for?",
-      "options": ["Visualizing qubit states", "Measuring qubits", "Entangling qubits", "Error correction"],
-      "answer": "Visualizing qubit states"
+      "question": "Which of these are quantum hardware technologies?",
+      "options": ["Superconducting qubits", "Trapped ions", "Photonic qubits", "Banana circuits"],
+      "answers": ["Superconducting qubits", "Trapped ions", "Photonic qubits"]
     },
     {
-      "question": "Which gate is equivalent to the classical NOT gate?",
-      "options": ["Pauli-X gate", "Pauli-Z gate", "Hadamard gate", "CNOT gate"],
-      "answer": "Pauli-X gate"
+      "question": "Which of these are quantum communication protocols?",
+      "options": ["Quantum key distribution", "Quantum teleportation", "Classical routing", "BubbleSort"],
+      "answers": ["Quantum key distribution", "Quantum teleportation"]
     },
     {
-      "question": "Which gate introduces a phase shift?",
-      "options": ["Pauli-Z gate", "Pauli-X gate", "Hadamard gate", "CNOT gate"],
-      "answer": "Pauli-Z gate"
+      "question": "Which of these are quantum machine learning approaches?",
+      "options": ["Quantum SVM", "Quantum PCA", "Quantum Neural Networks", "BubbleSort"],
+      "answers": ["Quantum SVM", "Quantum PCA", "Quantum Neural Networks"]
     },
     {
-      "question": "What is the significance of Bell states?",
-      "options": ["They are maximally entangled states", "They represent superposition", "They measure qubits", "They reset qubits"],
-      "answer": "They are maximally entangled states"
+      "question": "Which of these are examples of decoherence sources?",
+      "options": ["Thermal noise", "Electromagnetic interference", "Environmental coupling", "Sorting arrays"],
+      "answers": ["Thermal noise", "Electromagnetic interference", "Environmental coupling"]
     },
     {
-      "question": "Which algorithm demonstrates exponential speedup over classical algorithms?",
-      "options": ["Shor's algorithm", "Grover's algorithm", "Deutsch-Jozsa algorithm", "Simon's algorithm"],
-      "answer": "Shor's algorithm"
+      "question": "Which of these are examples of quantum speedup problems?",
+      "options": ["Integer factorization", "Unstructured search", "Simulation of quantum systems", "Sorting arrays"],
+      "answers": ["Integer factorization", "Unstructured search", "Simulation of quantum systems"]
     },
     {
-      "question": "What is the role of quantum error correction?",
-      "options": ["To protect quantum information from decoherence and noise", "To measure qubits", "To entangle qubits", "To collapse qubits"],
-      "answer": "To protect quantum information from decoherence and noise"
+      "question": "Which of these are examples of quantum hardware challenges?",
+      "options": ["Scalability", "Error correction", "Qubit coherence time", "Sorting arrays"],
+      "answers": ["Scalability", "Error correction", "Qubit coherence time"]
     },
     {
-      "question": "Which physical phenomenon is exploited in quantum teleportation?",
-      "options": ["Entanglement", "Superposition", "Interference", "Decoherence"],
-      "answer": "Entanglement"
+      "question": "Which of these are examples of quantum measurement postulates?",
+      "options": ["Collapse of wavefunction", "Probabilistic outcomes", "Unitary evolution", "Sorting arrays"],
+      "answers": ["Collapse of wavefunction", "Probabilistic outcomes"]
     },
     {
-      "question": "What is the difference between classical parallelism and quantum parallelism?",
-      "options": ["Quantum parallelism evaluates many inputs simultaneously via superposition", "Classical is faster always", "Quantum uses multiple CPUs", "No difference"],
-      "answer": "Quantum parallelism evaluates many inputs simultaneously via superposition"
+      "question": "Which of these are examples of quantum cryptography applications?",
+      "options": ["Quantum key distribution", "Quantum random number generation", "Quantum secure communication", "Sorting arrays"],
+      "answers": ["Quantum key distribution", "Quantum random number generation", "Quantum secure communication"]
     },
     {
-      "question": "Which gate is used to perform conditional operations?",
-      "options": ["CNOT gate", "Hadamard gate", "Pauli-X gate", "Pauli-Z gate"],
-      "answer": "CNOT gate"
+      "question": "Which of these are examples of quantum annealing applications?",
+      "options": ["Optimization problems", "Machine learning", "Scheduling", "Sorting arrays"],
+      "answers": ["Optimization problems", "Machine learning", "Scheduling"]
     },
     {
-      "question": "What is the role of measurement in quantum computing?",
-      "options": ["Collapses qubit state to classical bit", "Creates entanglement", "Creates superposition", "Performs error correction"],
-      "answer": "Collapses qubit state to classical bit"
+      "question": "Which of these are examples of quantum programming languages?",
+      "options": ["Q#", "Quipper", "Cirq", "BananaLang"],
+      "answers": ["Q#", "Quipper", "Cirq"]
     },
     {
-      "question": "Which algorithm solves the hidden subgroup problem?",
-      "options": ["Shor's algorithm", "Simon's algorithm", "Grover's algorithm", "Deutsch-Jozsa algorithm"],
-      "answer": "Simon's algorithm"
+      "question": "Which of these are examples of quantum hardware vendors?",
+      "options": ["IBM", "Google", "Rigetti", "BananaCorp"],
+      "answers": ["IBM", "Google", "Rigetti"]
     },
     {
-      "question": "Which quantum computing framework is developed by Google?",
-      "options": ["Cirq", "Qiskit", "Quipper", "Ocean"],
-      "answer": "Cirq"
+      "question": "Which of these are examples of quantum computing limitations?",
+      "options": ["Error correction overhead", "Decoherence", "Scalability issues", "Sorting arrays"],
+      "answers": ["Error correction overhead", "Decoherence", "Scalability issues"]
     }
   ]
 }

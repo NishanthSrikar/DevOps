@@ -1,156 +1,156 @@
 {
   "beginner": [
     {
-      "question": "Which extension is used for Python files?",
-      "options": [".py", ".java", ".cpp", ".js"],
-      "answer": ".py"
+      "question": "Which of these are valid Python data types?",
+      "options": ["int", "float", "str", "banana"],
+      "answers": ["int", "float", "str"]
+    },
+    {
+      "question": "Which symbol is used to comment a line in Python?",
+      "options": ["#", "//", "/*", "--"],
+      "answer": "#"
+    },
+    {
+      "question": "Which of these are Python collection data types?",
+      "options": ["list", "tuple", "set", "dictionary"],
+      "answers": ["list", "tuple", "set", "dictionary"]
     },
     {
       "question": "Which keyword is used to define a function in Python?",
-      "options": ["func", "def", "function", "lambda"],
+      "options": ["def", "func", "function", "lambda"],
       "answer": "def"
     },
     {
-      "question": "Which data type is used to store True/False values?",
-      "options": ["int", "bool", "str", "float"],
-      "answer": "bool"
+      "question": "Which of these are Python loop constructs?",
+      "options": ["for", "while", "do-while", "repeat-until"],
+      "answers": ["for", "while"]
     },
     {
-      "question": "Which operator is used for exponentiation?",
-      "options": ["^", "**", "exp", "pow"],
-      "answer": "**"
+      "question": "Which of these are Python boolean values?",
+      "options": ["True", "False", "Yes", "No"],
+      "answers": ["True", "False"]
     },
     {
-      "question": "Which keyword is used to import modules?",
-      "options": ["include", "import", "require", "module"],
-      "answer": "import"
+      "question": "Which of these are valid Python conditional statements?",
+      "options": ["if", "elif", "else", "switch"],
+      "answers": ["if", "elif", "else"]
     },
     {
-      "question": "Which function is used to display output?",
-      "options": ["echo()", "print()", "write()", "out()"],
-      "answer": "print()"
+      "question": "Which of these are Python built-in functions?",
+      "options": ["len()", "print()", "input()", "banana()"],
+      "answers": ["len()", "print()", "input()"]
     },
     {
-      "question": "Which keyword is used for loops?",
-      "options": ["repeat", "loop", "for", "iterate"],
-      "answer": "for"
+      "question": "Which of these are valid Python operators?",
+      "options": ["+", "-", "*", "++"],
+      "answers": ["+", "-", "*"]
     },
     {
-      "question": "Which keyword is used to handle exceptions?",
-      "options": ["try/except", "catch", "error", "handle"],
-      "answer": "try/except"
-    },
-    {
-      "question": "Which function returns the length of a list?",
-      "options": ["size()", "len()", "count()", "length()"],
-      "answer": "len()"
-    },
-    {
-      "question": "Which keyword is used to define a class?",
-      "options": ["class", "struct", "object", "define"],
-      "answer": "class"
+      "question": "Which of these is the correct way to import a module?",
+      "options": ["import math", "include math", "using math", "require math"],
+      "answer": "import math"
     }
   ],
   "advanced": [
     {
-      "question": "What is the difference between list and tuple?",
-      "options": ["Lists are mutable, tuples are immutable", "Tuples are faster always", "Lists store only numbers", "No difference"],
-      "answer": "Lists are mutable, tuples are immutable"
+      "question": "Which of these are Python object-oriented programming features?",
+      "options": ["Encapsulation", "Inheritance", "Polymorphism", "Compilation"],
+      "answers": ["Encapsulation", "Inheritance", "Polymorphism"]
     },
     {
-      "question": "Which keyword is used to create anonymous functions?",
-      "options": ["lambda", "def", "func", "anon"],
-      "answer": "lambda"
+      "question": "Which of these are Python decorators?",
+      "options": ["@staticmethod", "@classmethod", "@property", "@banana"],
+      "answers": ["@staticmethod", "@classmethod", "@property"]
     },
     {
-      "question": "What is Python's memory management feature?",
-      "options": ["Garbage collection", "Manual allocation", "Pointers", "Reference counting only"],
-      "answer": "Garbage collection"
+      "question": "Which of these are Python exception handling keywords?",
+      "options": ["try", "except", "finally", "throw"],
+      "answers": ["try", "except", "finally"]
     },
     {
-      "question": "Which module in Python is used for regular expressions?",
-      "options": ["regex", "re", "regexp", "pattern"],
-      "answer": "re"
+      "question": "Which of these are Python data science libraries?",
+      "options": ["NumPy", "Pandas", "Matplotlib", "Excel"],
+      "answers": ["NumPy", "Pandas", "Matplotlib"]
     },
     {
-      "question": "What is the difference between shallow copy and deep copy in Python?",
-      "options": ["Shallow copies references, deep copies objects", "Deep copy is faster", "Both are identical", "Shallow copy uses recursion"],
-      "answer": "Shallow copies references, deep copies objects"
+      "question": "Which of these are Python web frameworks?",
+      "options": ["Django", "Flask", "FastAPI", "Spring"],
+      "answers": ["Django", "Flask", "FastAPI"]
     },
     {
-      "question": "Which Python keyword is used to define generators?",
-      "options": ["yield", "return", "generate", "async"],
-      "answer": "yield"
+      "question": "Which of these are Python testing frameworks?",
+      "options": ["unittest", "pytest", "nose", "JUnit"],
+      "answers": ["unittest", "pytest", "nose"]
     },
     {
-      "question": "Which built-in function is used to sort iterables?",
-      "options": ["sort()", "sorted()", "order()", "arrange()"],
-      "answer": "sorted()"
+      "question": "Which of these are Python concurrency modules?",
+      "options": ["threading", "multiprocessing", "asyncio", "banana"],
+      "answers": ["threading", "multiprocessing", "asyncio"]
     },
     {
-      "question": "What is the difference between is and == in Python?",
-      "options": ["is checks identity, == checks equality", "Both are identical", "== checks identity, is checks equality", "is is deprecated"],
-      "answer": "is checks identity, == checks equality"
+      "question": "Which of these are Python serialization modules?",
+      "options": ["pickle", "json", "marshal", "banana"],
+      "answers": ["pickle", "json", "marshal"]
     },
     {
-      "question": "Which Python library is commonly used for data analysis?",
-      "options": ["NumPy", "Pandas", "Matplotlib", "TensorFlow"],
-      "answer": "Pandas"
+      "question": "Which of these are Python machine learning libraries?",
+      "options": ["scikit-learn", "TensorFlow", "PyTorch", "Excel"],
+      "answers": ["scikit-learn", "TensorFlow", "PyTorch"]
     },
     {
-      "question": "Which Python library is used for numerical computations?",
-      "options": ["NumPy", "Pandas", "Matplotlib", "Scikit-learn"],
-      "answer": "NumPy"
+      "question": "Which of these are Python visualization libraries?",
+      "options": ["Matplotlib", "Seaborn", "Plotly", "Excel"],
+      "answers": ["Matplotlib", "Seaborn", "Plotly"]
     },
     {
-      "question": "Which Python library is used for machine learning?",
-      "options": ["TensorFlow", "Matplotlib", "Flask", "Requests"],
-      "answer": "TensorFlow"
+      "question": "Which of these are Python package managers?",
+      "options": ["pip", "conda", "npm", "yarn"],
+      "answers": ["pip", "conda"]
     },
     {
-      "question": "Which Python library is used for visualization?",
-      "options": ["Matplotlib", "NumPy", "Pandas", "Scikit-learn"],
-      "answer": "Matplotlib"
+      "question": "Which of these are Python built-in data structures?",
+      "options": ["list", "tuple", "set", "dict"],
+      "answers": ["list", "tuple", "set", "dict"]
     },
     {
-      "question": "Which Python library is used for web development?",
-      "options": ["Flask", "Django", "FastAPI", "All of the above"],
-      "answer": "All of the above"
+      "question": "Which of these are Python keywords?",
+      "options": ["global", "nonlocal", "yield", "banana"],
+      "answers": ["global", "nonlocal", "yield"]
     },
     {
-      "question": "Which keyword is used to define asynchronous functions?",
-      "options": ["async", "await", "future", "thread"],
-      "answer": "async"
+      "question": "Which of these are Python file handling modes?",
+      "options": ["r", "w", "a", "x"],
+      "answers": ["r", "w", "a", "x"]
     },
     {
-      "question": "Which keyword is used to wait for asynchronous results?",
-      "options": ["await", "async", "future", "yield"],
-      "answer": "await"
+      "question": "Which of these are Python functional programming features?",
+      "options": ["map()", "filter()", "reduce()", "lambda"],
+      "answers": ["map()", "filter()", "reduce()", "lambda"]
     },
     {
-      "question": "Which Python library is used for HTTP requests?",
-      "options": ["Requests", "urllib", "http", "socket"],
-      "answer": "Requests"
+      "question": "Which of these are Python metaprogramming features?",
+      "options": ["metaclasses", "introspection", "reflection", "banana"],
+      "answers": ["metaclasses", "introspection", "reflection"]
     },
     {
-      "question": "Which Python library is used for testing?",
-      "options": ["unittest", "pytest", "nose", "All of the above"],
-      "answer": "All of the above"
+      "question": "Which of these are Python async features?",
+      "options": ["async", "await", "event loop", "goto"],
+      "answers": ["async", "await", "event loop"]
     },
     {
-      "question": "Which Python library is used for scientific computing?",
-      "options": ["SciPy", "NumPy", "Pandas", "Matplotlib"],
-      "answer": "SciPy"
+      "question": "Which of these are Python memory management features?",
+      "options": ["Garbage Collection", "Reference Counting", "Manual free()", "Finalization"],
+      "answers": ["Garbage Collection", "Reference Counting", "Finalization"]
     },
     {
-      "question": "Which Python library is used for deep learning?",
-      "options": ["PyTorch", "TensorFlow", "Keras", "All of the above"],
-      "answer": "All of the above"
+      "question": "Which of these are Python design patterns?",
+      "options": ["Singleton", "Factory", "Observer", "BubbleSort"],
+      "answers": ["Singleton", "Factory", "Observer"]
     },
     {
-      "question": "Which Python library is used for natural language processing?",
-      "options": ["NLTK", "spaCy", "Transformers", "All of the above"],
-      "answer": "All of the above"
+      "question": "Which of these are Python standard library modules?",
+      "options": ["os", "sys", "math", "banana"],
+      "answers": ["os", "sys", "math"]
     }
   ]
 }

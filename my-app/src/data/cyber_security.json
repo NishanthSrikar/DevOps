@@ -7,13 +7,18 @@
     },
     {
       "question": "What does HTTPS stand for?",
-      "options": ["HyperText Transfer Protocol Secure", "High Transfer Text Protocol Standard", "Hyperlink Transfer Protocol Service", "HyperText Transmission Security"],
+      "options": [
+        "HyperText Transfer Protocol Secure",
+        "High Transfer Text Protocol Standard",
+        "Hyperlink Transfer Protocol Service",
+        "HyperText Transmission Security"
+      ],
       "answer": "HyperText Transfer Protocol Secure"
     },
     {
-      "question": "Which of these is a common type of malware?",
-      "options": ["Firewall", "Antivirus", "Trojan Horse", "Router"],
-      "answer": "Trojan Horse"
+      "question": "Which of these are common types of malware?",
+      "options": ["Firewall", "Antivirus", "Trojan Horse", "Worm", "Ransomware"],
+      "answers": ["Trojan Horse", "Worm", "Ransomware"]
     },
     {
       "question": "Phishing attacks usually happen through?",
@@ -21,9 +26,9 @@
       "answer": "Emails"
     },
     {
-      "question": "Which of the following is used to protect a network?",
-      "options": ["Firewall", "Spreadsheet", "Compiler", "Text editor"],
-      "answer": "Firewall"
+      "question": "Which of the following are used to protect a network?",
+      "options": ["Firewall", "Spreadsheet", "Compiler", "Antivirus"],
+      "answers": ["Firewall", "Antivirus"]
     },
     {
       "question": "What is the main purpose of antivirus software?",
@@ -31,9 +36,9 @@
       "answer": "To detect and remove malware"
     },
     {
-      "question": "Which of these is a secure way to connect remotely?",
-      "options": ["Telnet", "FTP", "SSH", "HTTP"],
-      "answer": "SSH"
+      "question": "Which of these are secure ways to connect remotely?",
+      "options": ["Telnet", "FTP", "SSH", "HTTPS"],
+      "answers": ["SSH", "HTTPS"]
     },
     {
       "question": "What does the 'C' in CIA triad stand for?",
@@ -46,9 +51,9 @@
       "answer": "Password + OTP"
     },
     {
-      "question": "Which of these is a common sign of a phishing website?",
-      "options": ["HTTPS enabled", "Spelling mistakes in URL", "Valid SSL certificate", "Official domain name"],
-      "answer": "Spelling mistakes in URL"
+      "question": "Which of these are common signs of a phishing website?",
+      "options": ["Spelling mistakes in URL", "Official domain name", "HTTPS enabled", "Poor grammar in content"],
+      "answers": ["Spelling mistakes in URL", "Poor grammar in content"]
     }
   ],
   "advanced": [
@@ -63,9 +68,9 @@
       "answer": "Database queries"
     },
     {
-      "question": "Which hashing algorithm is considered outdated and insecure?",
-      "options": ["SHA-256", "MD5", "SHA-512", "bcrypt"],
-      "answer": "MD5"
+      "question": "Which hashing algorithms are considered outdated and insecure?",
+      "options": ["SHA-256", "MD5", "SHA-1", "bcrypt"],
+      "answers": ["MD5", "SHA-1"]
     },
     {
       "question": "In penetration testing, what does 'reconnaissance' mean?",
@@ -73,9 +78,9 @@
       "answer": "Gathering information"
     },
     {
-      "question": "Which protocol is used for secure web communication?",
-      "options": ["HTTP", "FTP", "HTTPS", "SMTP"],
-      "answer": "HTTPS"
+      "question": "Which protocols are used for secure web communication?",
+      "options": ["HTTP", "FTP", "HTTPS", "SSH"],
+      "answers": ["HTTPS", "SSH"]
     },
     {
       "question": "What is the main purpose of a VPN?",
@@ -83,9 +88,9 @@
       "answer": "To encrypt internet traffic"
     },
     {
-      "question": "Which of these is a brute-force attack?",
-      "options": ["Trying all possible passwords", "Sending fake emails", "Installing malware", "Intercepting traffic"],
-      "answer": "Trying all possible passwords"
+      "question": "Which of these are brute-force attack techniques?",
+      "options": ["Trying all possible passwords", "Sending fake emails", "Installing malware", "Dictionary attacks"],
+      "answers": ["Trying all possible passwords", "Dictionary attacks"]
     },
     {
       "question": "What does XSS stand for?",
@@ -93,24 +98,29 @@
       "answer": "Cross-Site Scripting"
     },
     {
-      "question": "Which port is commonly used for HTTPS?",
+      "question": "Which ports are commonly used for secure communication?",
       "options": ["21", "22", "80", "443"],
-      "answer": "443"
+      "answers": ["22", "443"]
     },
     {
-      "question": "Which of these is a symmetric encryption algorithm?",
-      "options": ["RSA", "AES", "ECC", "DSA"],
-      "answer": "AES"
+      "question": "Which of these are symmetric encryption algorithms?",
+      "options": ["RSA", "AES", "ECC", "DES"],
+      "answers": ["AES", "DES"]
     },
     {
       "question": "What is the purpose of a honeypot in cybersecurity?",
-      "options": ["To attract attackers and study their behavior", "To store passwords", "To block malware", "To encrypt traffic"],
+      "options": [
+        "To attract attackers and study their behavior",
+        "To store passwords",
+        "To block malware",
+        "To encrypt traffic"
+      ],
       "answer": "To attract attackers and study their behavior"
     },
     {
-      "question": "Which Linux command is used to check open ports?",
-      "options": ["ls", "netstat", "grep", "chmod"],
-      "answer": "netstat"
+      "question": "Which Linux commands can be used to check open ports?",
+      "options": ["ls", "netstat", "ss", "chmod"],
+      "answers": ["netstat", "ss"]
     },
     {
       "question": "Which of these is NOT a common firewall type?",
@@ -123,33 +133,43 @@
       "answer": "Data interception"
     },
     {
-      "question": "Which of these is a common password cracking tool?",
-      "options": ["John the Ripper", "Photoshop", "Excel", "Word"],
-      "answer": "John the Ripper"
+      "question": "Which of these are common password cracking tools?",
+      "options": ["John the Ripper", "Hashcat", "Photoshop", "Excel"],
+      "answers": ["John the Ripper", "Hashcat"]
     },
     {
       "question": "What does 'zero-day vulnerability' mean?",
-      "options": ["A bug discovered and patched immediately", "A vulnerability exploited before a fix is available", "A virus lasting 24 hours", "A system crash on day zero"],
+      "options": [
+        "A bug discovered and patched immediately",
+        "A vulnerability exploited before a fix is available",
+        "A virus lasting 24 hours",
+        "A system crash on day zero"
+      ],
       "answer": "A vulnerability exploited before a fix is available"
     },
     {
-      "question": "Which of these is a secure hashing algorithm?",
-      "options": ["MD5", "SHA-1", "SHA-256", "CRC32"],
-      "answer": "SHA-256"
+      "question": "Which of these are secure hashing algorithms?",
+      "options": ["MD5", "SHA-1", "SHA-256", "SHA-512"],
+      "answers": ["SHA-256", "SHA-512"]
     },
     {
-      "question": "Which tool is used for password recovery and cracking?",
-      "options": ["Hashcat", "Excel", "Wireshark", "Nmap"],
-      "answer": "Hashcat"
+      "question": "Which tools are used for password recovery and cracking?",
+      "options": ["Hashcat", "John the Ripper", "Wireshark", "Nmap"],
+      "answers": ["Hashcat", "John the Ripper"]
     },
     {
-      "question": "Which of these is a common reconnaissance tool?",
+      "question": "Which of these are common reconnaissance tools?",
       "options": ["Nmap", "Word", "Excel", "Paint"],
       "answer": "Nmap"
     },
     {
-      "question": "Which of these is a principle of least privilege?",
-      "options": ["Users get only the access they need", "Users get admin rights by default", "All users share one password", "No restrictions on access"],
+      "question": "Which of these are principles of least privilege?",
+      "options": [
+        "Users get only the access they need",
+        "Users get admin rights by default",
+        "All users share one password",
+        "No restrictions on access"
+      ],
       "answer": "Users get only the access they need"
     }
   ]

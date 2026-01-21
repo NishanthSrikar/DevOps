@@ -384,3 +384,27 @@ button:hover {
 .feature-card h3 {
   margin-bottom: 10px;
 }
+
+.selected {
+  background-color: #ddd;
+}
+
+.correct {
+  background-color: #4caf50; /* green */
+  color: white;
+}
+
+.wrong {
+  background-color: #f44336; /* red */
+  color: white;
+}
+
+.feedback-correct {
+  color: #4caf50;
+  font-weight: bold;
+}
+
+.feedback-wrong {
+  color: #f44336;
+  font-weight: bold;
+}

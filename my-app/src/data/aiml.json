@@ -1,156 +1,161 @@
 {
   "beginner": [
     {
-      "question": "What does AI stand for?",
-      "options": ["Artificial Intelligence", "Automated Integration", "Advanced Innovation", "Applied Informatics"],
-      "answer": "Artificial Intelligence"
-    },
-    {
-      "question": "Which of the following is a common programming language for AI?",
-      "options": ["Python", "HTML", "CSS", "SQL"],
-      "answer": "Python"
-    },
-    {
-      "question": "What does ML stand for?",
-      "options": ["Machine Learning", "Memory Logic", "Modern Language", "Model Layer"],
+      "question": "What does ML stand for in AI/ML?",
+      "options": ["Machine Learning", "Memory Logic", "Model Layer", "Meta Language"],
       "answer": "Machine Learning"
     },
     {
-      "question": "Which type of learning uses labeled data?",
-      "options": ["Supervised Learning", "Unsupervised Learning", "Reinforcement Learning", "Deep Learning"],
-      "answer": "Supervised Learning"
+      "question": "Which of these are supervised learning algorithms?",
+      "options": ["Linear Regression", "K-Means", "Decision Trees", "Naive Bayes"],
+      "answers": ["Linear Regression", "Decision Trees", "Naive Bayes"]
     },
     {
-      "question": "Which type of learning uses unlabeled data?",
-      "options": ["Supervised Learning", "Unsupervised Learning", "Reinforcement Learning", "Transfer Learning"],
-      "answer": "Unsupervised Learning"
+      "question": "Which of these is a clustering algorithm?",
+      "options": ["K-Means", "Logistic Regression", "Support Vector Machine", "Linear Regression"],
+      "answer": "K-Means"
     },
     {
-      "question": "Which algorithm is commonly used for classification?",
-      "options": ["K-Nearest Neighbors", "K-Means", "Linear Regression", "Apriori"],
-      "answer": "K-Nearest Neighbors"
+      "question": "Which of these are types of neural networks?",
+      "options": ["CNN", "RNN", "GAN", "Decision Tree"],
+      "answers": ["CNN", "RNN", "GAN"]
     },
     {
-      "question": "Which algorithm is commonly used for regression?",
-      "options": ["Linear Regression", "Decision Trees", "Naive Bayes", "K-Means"],
-      "answer": "Linear Regression"
+      "question": "What does AI stand for?",
+      "options": ["Artificial Intelligence", "Automated Input", "Advanced Integration", "Applied Innovation"],
+      "answer": "Artificial Intelligence"
     },
     {
-      "question": "Which of the following is a deep learning framework?",
-      "options": ["TensorFlow", "React", "Angular", "Vue"],
-      "answer": "TensorFlow"
+      "question": "Which of these are common applications of AI?",
+      "options": ["Image recognition", "Spam filtering", "Weather forecasting", "Cooking recipes"],
+      "answers": ["Image recognition", "Spam filtering", "Weather forecasting"]
     },
     {
-      "question": "Which of the following is an application of AI?",
-      "options": ["Speech recognition", "Image classification", "Recommendation systems", "All of the above"],
-      "answer": "All of the above"
+      "question": "Which of these is an unsupervised learning task?",
+      "options": ["Clustering", "Regression", "Classification", "Prediction"],
+      "answer": "Clustering"
     },
     {
-      "question": "Which company developed TensorFlow?",
-      "options": ["Google", "Microsoft", "IBM", "Amazon"],
-      "answer": "Google"
+      "question": "Which of these are evaluation metrics for classification?",
+      "options": ["Accuracy", "Precision", "Recall", "Mean Squared Error"],
+      "answers": ["Accuracy", "Precision", "Recall"]
+    },
+    {
+      "question": "Which of these are reinforcement learning concepts?",
+      "options": ["Agent", "Environment", "Reward", "Compiler"],
+      "answers": ["Agent", "Environment", "Reward"]
+    },
+    {
+      "question": "Which of these is a common activation function?",
+      "options": ["ReLU", "Sigmoid", "Bubble Sort", "Tanh"],
+      "answers": ["ReLU", "Sigmoid", "Tanh"]
     }
   ],
   "advanced": [
     {
-      "question": "What is overfitting in machine learning?",
-      "options": ["Model performs well on training data but poorly on unseen data", "Model performs poorly on both training and test data", "Model generalizes well", "Model ignores training data"],
-      "answer": "Model performs well on training data but poorly on unseen data"
+      "question": "Which optimization algorithms are used to train neural networks?",
+      "options": ["SGD", "Adam", "RMSProp", "QuickSort"],
+      "answers": ["SGD", "Adam", "RMSProp"]
     },
     {
-      "question": "Which technique is used to reduce overfitting?",
-      "options": ["Regularization", "Normalization", "Gradient Descent", "Feature Scaling"],
-      "answer": "Regularization"
+      "question": "What does overfitting mean in ML?",
+      "options": [
+        "Model performs well on training but poorly on unseen data",
+        "Model ignores training data",
+        "Model has too few parameters",
+        "Model performs equally well everywhere"
+      ],
+      "answer": "Model performs well on training but poorly on unseen data"
     },
     {
-      "question": "Which activation function is commonly used in deep neural networks?",
-      "options": ["ReLU", "Sigmoid", "Tanh", "All of the above"],
-      "answer": "ReLU"
+      "question": "Which are ensemble learning methods?",
+      "options": ["Random Forest", "Bagging", "Boosting", "K-Means"],
+      "answers": ["Random Forest", "Bagging", "Boosting"]
     },
     {
-      "question": "Which optimization algorithm is widely used in training neural networks?",
-      "options": ["Stochastic Gradient Descent", "K-Means", "Apriori", "PageRank"],
-      "answer": "Stochastic Gradient Descent"
+      "question": "Which techniques prevent overfitting?",
+      "options": ["Dropout", "Regularization", "Data Augmentation", "Sorting algorithms"],
+      "answers": ["Dropout", "Regularization", "Data Augmentation"]
     },
     {
-      "question": "What is the vanishing gradient problem?",
-      "options": ["Gradients become too small during backpropagation", "Gradients explode during training", "Gradients are not computed", "Gradients are ignored"],
-      "answer": "Gradients become too small during backpropagation"
+      "question": "Which are reinforcement learning approaches?",
+      "options": ["Value-based", "Policy-based", "Actor-Critic", "Linear Regression"],
+      "answers": ["Value-based", "Policy-based", "Actor-Critic"]
     },
     {
-      "question": "Which neural network architecture is used for image recognition?",
-      "options": ["Convolutional Neural Networks (CNNs)", "Recurrent Neural Networks (RNNs)", "Transformers", "GANs"],
-      "answer": "Convolutional Neural Networks (CNNs)"
+      "question": "Which are loss functions in ML?",
+      "options": ["Cross-Entropy", "MSE", "Hinge Loss", "Bubble Sort"],
+      "answers": ["Cross-Entropy", "MSE", "Hinge Loss"]
     },
     {
-      "question": "Which neural network architecture is used for sequential data?",
-      "options": ["Recurrent Neural Networks (RNNs)", "CNNs", "GANs", "Autoencoders"],
-      "answer": "Recurrent Neural Networks (RNNs)"
+      "question": "Which are activation functions used in deep learning?",
+      "options": ["ReLU", "Sigmoid", "Tanh", "Softmax"],
+      "answers": ["ReLU", "Sigmoid", "Tanh", "Softmax"]
     },
     {
-      "question": "Which architecture is used for natural language processing tasks?",
-      "options": ["Transformers", "CNNs", "RNNs", "Decision Trees"],
-      "answer": "Transformers"
+      "question": "Which are generative models?",
+      "options": ["GANs", "VAEs", "Decision Trees", "Naive Bayes"],
+      "answers": ["GANs", "VAEs"]
     },
     {
-      "question": "Which algorithm is used for dimensionality reduction?",
-      "options": ["Principal Component Analysis (PCA)", "Linear Regression", "K-Means", "Naive Bayes"],
-      "answer": "Principal Component Analysis (PCA)"
+      "question": "Which are challenges in AI ethics?",
+      "options": ["Bias in datasets", "Privacy concerns", "Transparency", "Sorting algorithms"],
+      "answers": ["Bias in datasets", "Privacy concerns", "Transparency"]
     },
     {
-      "question": "Which algorithm is used for clustering?",
-      "options": ["K-Means", "Linear Regression", "Decision Trees", "SVM"],
-      "answer": "K-Means"
+      "question": "Which are common uses of NLP?",
+      "options": ["Sentiment analysis", "Machine translation", "Speech recognition", "Sorting numbers"],
+      "answers": ["Sentiment analysis", "Machine translation", "Speech recognition"]
     },
     {
-      "question": "What is reinforcement learning?",
-      "options": ["Learning by trial and error with rewards", "Learning with labeled data", "Learning with unlabeled data", "Learning with transfer knowledge"],
-      "answer": "Learning by trial and error with rewards"
+      "question": "Which are secure hashing algorithms?",
+      "options": ["MD5", "SHA-1", "SHA-256", "SHA-512"],
+      "answers": ["SHA-256", "SHA-512"]
     },
     {
-      "question": "Which algorithm is used in reinforcement learning?",
-      "options": ["Q-Learning", "Linear Regression", "Naive Bayes", "K-Means"],
-      "answer": "Q-Learning"
+      "question": "Which are common dimensionality reduction techniques?",
+      "options": ["PCA", "t-SNE", "LDA", "Bubble Sort"],
+      "answers": ["PCA", "t-SNE", "LDA"]
     },
     {
-      "question": "Which loss function is commonly used for classification?",
-      "options": ["Cross-Entropy Loss", "Mean Squared Error", "Hinge Loss", "Absolute Error"],
-      "answer": "Cross-Entropy Loss"
+      "question": "Which are gradient boosting frameworks?",
+      "options": ["XGBoost", "LightGBM", "CatBoost", "Photoshop"],
+      "answers": ["XGBoost", "LightGBM", "CatBoost"]
     },
     {
-      "question": "Which loss function is commonly used for regression?",
-      "options": ["Mean Squared Error", "Cross-Entropy Loss", "Hinge Loss", "Log Loss"],
-      "answer": "Mean Squared Error"
+      "question": "Which are common kernel functions in SVM?",
+      "options": ["Linear", "Polynomial", "RBF", "Sigmoid"],
+      "answers": ["Linear", "Polynomial", "RBF", "Sigmoid"]
     },
     {
-      "question": "Which algorithm is used for support vector machines?",
-      "options": ["Kernel trick", "Gradient Descent", "Decision Trees", "Naive Bayes"],
-      "answer": "Kernel trick"
+      "question": "Which are evaluation metrics for regression?",
+      "options": ["MSE", "RMSE", "MAE", "Accuracy"],
+      "answers": ["MSE", "RMSE", "MAE"]
     },
     {
-      "question": "Which algorithm is used for ensemble learning?",
-      "options": ["Random Forest", "Linear Regression", "Naive Bayes", "K-Means"],
-      "answer": "Random Forest"
+      "question": "Which are common challenges in training deep networks?",
+      "options": ["Vanishing gradients", "Exploding gradients", "Overfitting", "Sorting arrays"],
+      "answers": ["Vanishing gradients", "Exploding gradients", "Overfitting"]
     },
     {
-      "question": "Which algorithm is used for boosting?",
-      "options": ["AdaBoost", "Random Forest", "K-Means", "SVM"],
-      "answer": "AdaBoost"
+      "question": "Which are examples of transfer learning models?",
+      "options": ["ResNet", "BERT", "VGG", "Excel"],
+      "answers": ["ResNet", "BERT", "VGG"]
     },
     {
-      "question": "Which algorithm is used for bagging?",
-      "options": ["Bootstrap Aggregating", "AdaBoost", "Gradient Descent", "SVM"],
-      "answer": "Bootstrap Aggregating"
+      "question": "Which are common clustering algorithms?",
+      "options": ["K-Means", "DBSCAN", "Hierarchical Clustering", "Logistic Regression"],
+      "answers": ["K-Means", "DBSCAN", "Hierarchical Clustering"]
     },
     {
-      "question": "Which algorithm is used for generative modeling?",
-      "options": ["GANs", "CNNs", "RNNs", "Transformers"],
-      "answer": "GANs"
+      "question": "Which are common uses of computer vision?",
+      "options": ["Object detection", "Image segmentation", "Face recognition", "Sorting files"],
+      "answers": ["Object detection", "Image segmentation", "Face recognition"]
     },
     {
-      "question": "Which algorithm is used for anomaly detection?",
-      "options": ["Isolation Forest", "Linear Regression", "Naive Bayes", "K-Means"],
-      "answer": "Isolation Forest"
+      "question": "Which are common challenges in reinforcement learning?",
+      "options": ["Sparse rewards", "Exploration vs exploitation", "Sample inefficiency", "Sorting algorithms"],
+      "answers": ["Sparse rewards", "Exploration vs exploitation", "Sample inefficiency"]
     }
   ]
 }

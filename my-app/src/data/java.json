@@ -1,156 +1,156 @@
 {
   "beginner": [
     {
-      "question": "Which extension is used for Java source files?",
-      "options": [".java", ".class", ".jar", ".js"],
-      "answer": ".java"
+      "question": "Which of these are valid Java primitive data types?",
+      "options": ["int", "float", "String", "boolean"],
+      "answers": ["int", "float", "boolean"]
     },
     {
       "question": "Which keyword is used to define a class in Java?",
-      "options": ["class", "struct", "object", "define"],
+      "options": ["class", "object", "new", "define"],
       "answer": "class"
     },
     {
-      "question": "Which method is the entry point of a Java program?",
-      "options": ["start()", "main()", "init()", "program()"],
-      "answer": "main()"
+      "question": "Which of these are valid Java access modifiers?",
+      "options": ["public", "private", "protected", "internal"],
+      "answers": ["public", "private", "protected"]
     },
     {
-      "question": "Which keyword is used to inherit a class?",
-      "options": ["extends", "inherits", "super", "implements"],
+      "question": "Which symbol is used to terminate a statement in Java?",
+      "options": [";", ":", ".", ","],
+      "answer": ";"
+    },
+    {
+      "question": "Which of these are valid loop constructs in Java?",
+      "options": ["for", "while", "do-while", "repeat-until"],
+      "answers": ["for", "while", "do-while"]
+    },
+    {
+      "question": "Which keyword is used to inherit a class in Java?",
+      "options": ["extends", "implements", "inherits", "super"],
       "answer": "extends"
     },
     {
-      "question": "Which keyword is used to implement an interface?",
-      "options": ["extends", "implements", "interface", "inherit"],
-      "answer": "implements"
+      "question": "Which of these are valid Java logical operators?",
+      "options": ["&&", "||", "!", "++"],
+      "answers": ["&&", "||", "!"]
     },
     {
-      "question": "Which keyword is used to declare constants in Java?",
-      "options": ["const", "final", "static", "constant"],
-      "answer": "final"
+      "question": "Which of these is the entry point of a Java program?",
+      "options": ["main method", "start method", "init method", "run method"],
+      "answer": "main method"
     },
     {
-      "question": "Which package is imported by default in Java?",
-      "options": ["java.lang", "java.util", "java.io", "java.sql"],
-      "answer": "java.lang"
+      "question": "Which of these are valid Java collections?",
+      "options": ["ArrayList", "HashMap", "HashSet", "LinkedList"],
+      "answers": ["ArrayList", "HashMap", "HashSet", "LinkedList"]
     },
     {
-      "question": "Which symbol is used for single-line comments in Java?",
-      "options": ["//", "/*", "#", "--"],
-      "answer": "//"
-    },
-    {
-      "question": "Which keyword is used to create objects in Java?",
+      "question": "Which keyword is used to create an object in Java?",
       "options": ["new", "create", "object", "instance"],
       "answer": "new"
-    },
-    {
-      "question": "Which keyword is used to stop a loop prematurely?",
-      "options": ["stop", "exit", "break", "return"],
-      "answer": "break"
     }
   ],
   "advanced": [
     {
-      "question": "What is the difference between JDK and JRE?",
-      "options": ["JDK includes development tools, JRE is runtime environment", "Both are identical", "JRE includes compiler, JDK does not", "JDK is smaller than JRE"],
-      "answer": "JDK includes development tools, JRE is runtime environment"
+      "question": "Which of these are features of Object-Oriented Programming in Java?",
+      "options": ["Encapsulation", "Inheritance", "Polymorphism", "Compilation"],
+      "answers": ["Encapsulation", "Inheritance", "Polymorphism"]
     },
     {
-      "question": "Which keyword is used to prevent method overriding?",
-      "options": ["final", "static", "sealed", "private"],
-      "answer": "final"
+      "question": "Which of these are valid Java interfaces from the Collections Framework?",
+      "options": ["List", "Set", "Map", "Queue"],
+      "answers": ["List", "Set", "Map", "Queue"]
     },
     {
-      "question": "Which keyword is used to define abstract classes?",
-      "options": ["abstract", "virtual", "interface", "pure"],
-      "answer": "abstract"
+      "question": "Which of these are valid Java exception handling keywords?",
+      "options": ["try", "catch", "finally", "throw"],
+      "answers": ["try", "catch", "finally", "throw"]
     },
     {
-      "question": "Which keyword is used to define interfaces?",
-      "options": ["interface", "abstract", "class", "implements"],
-      "answer": "interface"
+      "question": "Which of these are valid Java annotations?",
+      "options": ["@Override", "@Deprecated", "@SuppressWarnings", "@Banana"],
+      "answers": ["@Override", "@Deprecated", "@SuppressWarnings"]
     },
     {
-      "question": "Which collection class allows duplicate elements?",
-      "options": ["Set", "List", "Map", "Queue"],
-      "answer": "List"
+      "question": "Which of these are valid Java generics usage?",
+      "options": ["List<String>", "Map<Integer, String>", "Set<Double>", "Array<int>"],
+      "answers": ["List<String>", "Map<Integer, String>", "Set<Double>"]
     },
     {
-      "question": "Which collection class stores key-value pairs?",
-      "options": ["Map", "List", "Set", "Queue"],
-      "answer": "Map"
+      "question": "Which of these are valid Java keywords for concurrency?",
+      "options": ["synchronized", "volatile", "transient", "threadsafe"],
+      "answers": ["synchronized", "volatile"]
     },
     {
-      "question": "Which exception is thrown when dividing by zero?",
-      "options": ["ArithmeticException", "NullPointerException", "IOException", "ClassCastException"],
-      "answer": "ArithmeticException"
+      "question": "Which of these are valid Java streams operations?",
+      "options": ["map", "filter", "reduce", "collect"],
+      "answers": ["map", "filter", "reduce", "collect"]
     },
     {
-      "question": "Which exception is thrown when accessing a null object?",
-      "options": ["NullPointerException", "ArithmeticException", "IOException", "ClassCastException"],
-      "answer": "NullPointerException"
+      "question": "Which of these are valid Java functional interfaces?",
+      "options": ["Runnable", "Callable", "Supplier", "Consumer"],
+      "answers": ["Runnable", "Callable", "Supplier", "Consumer"]
     },
     {
-      "question": "Which keyword is used to handle exceptions?",
-      "options": ["try/catch", "throw", "error", "except"],
-      "answer": "try/catch"
+      "question": "Which of these are valid Java 8 features?",
+      "options": ["Lambda expressions", "Streams API", "Default methods", "Goto statement"],
+      "answers": ["Lambda expressions", "Streams API", "Default methods"]
     },
     {
-      "question": "Which keyword is used to throw exceptions?",
-      "options": ["throw", "throws", "error", "except"],
-      "answer": "throw"
+      "question": "Which of these are valid Java 9 features?",
+      "options": ["Modules", "JShell", "Reactive Streams", "Pointers"],
+      "answers": ["Modules", "JShell", "Reactive Streams"]
     },
     {
-      "question": "Which keyword is used to declare checked exceptions in method signature?",
-      "options": ["throws", "throw", "error", "except"],
-      "answer": "throws"
+      "question": "Which of these are valid Java 11 features?",
+      "options": ["var in lambda parameters", "HTTP Client API", "String methods", "Pointers"],
+      "answers": ["var in lambda parameters", "HTTP Client API", "String methods"]
     },
     {
-      "question": "Which keyword is used to synchronize methods?",
-      "options": ["synchronized", "lock", "threadsafe", "atomic"],
-      "answer": "synchronized"
+      "question": "Which of these are valid Java 17 features?",
+      "options": ["Sealed classes", "Pattern matching for switch", "Records", "Pointers"],
+      "answers": ["Sealed classes", "Pattern matching for switch", "Records"]
     },
     {
-      "question": "Which keyword is used to create threads?",
-      "options": ["extends Thread / implements Runnable", "new Thread()", "createThread()", "thread"],
-      "answer": "extends Thread / implements Runnable"
+      "question": "Which of these are valid Java memory management mechanisms?",
+      "options": ["Garbage Collection", "Reference Counting", "Manual free()", "Finalization"],
+      "answers": ["Garbage Collection", "Finalization"]
     },
     {
-      "question": "Which keyword is used to define generic types?",
-      "options": ["<>", "generic", "template", "type"],
-      "answer": "<>"
+      "question": "Which of these are valid Java design patterns?",
+      "options": ["Singleton", "Factory", "Observer", "BubbleSort"],
+      "answers": ["Singleton", "Factory", "Observer"]
     },
     {
-      "question": "Which keyword is used to define enums?",
-      "options": ["enum", "constant", "final", "static"],
-      "answer": "enum"
+      "question": "Which of these are valid Java keywords?",
+      "options": ["abstract", "final", "static", "banana"],
+      "answers": ["abstract", "final", "static"]
     },
     {
-      "question": "Which keyword is used to define annotations?",
-      "options": ["@", "annotation", "meta", "decorator"],
-      "answer": "@"
+      "question": "Which of these are valid Java file handling classes?",
+      "options": ["FileReader", "BufferedReader", "FileWriter", "FileBanana"],
+      "answers": ["FileReader", "BufferedReader", "FileWriter"]
     },
     {
-      "question": "Which keyword is used to define static blocks?",
-      "options": ["static", "block", "init", "final"],
-      "answer": "static"
+      "question": "Which of these are valid Java concurrency utilities?",
+      "options": ["ExecutorService", "Future", "CountDownLatch", "BananaLatch"],
+      "answers": ["ExecutorService", "Future", "CountDownLatch"]
     },
     {
-      "question": "Which keyword is used to define inner classes?",
-      "options": ["class inside class", "nested", "inner", "static"],
-      "answer": "class inside class"
+      "question": "Which of these are valid Java polymorphism types?",
+      "options": ["Compile-time", "Run-time", "Static", "Dynamic"],
+      "answers": ["Compile-time", "Run-time"]
     },
     {
-      "question": "Which keyword is used to define packages?",
-      "options": ["package", "namespace", "module", "scope"],
-      "answer": "package"
+      "question": "Which of these are valid Java preprocessor directives?",
+      "options": ["import", "package", "#define", "#include"],
+      "answers": ["import", "package"]
     },
     {
-      "question": "Which keyword is used to import classes from packages?",
-      "options": ["import", "include", "require", "use"],
-      "answer": "import"
+      "question": "Which of these are valid Java serialization classes?",
+      "options": ["ObjectOutputStream", "ObjectInputStream", "Serializable", "BananaStream"],
+      "answers": ["ObjectOutputStream", "ObjectInputStream", "Serializable"]
     }
   ]
 }
