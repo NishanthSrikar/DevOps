@@ -37,7 +37,7 @@ export default function Quiz() {
   const currentQuestion = questions[current];
 
   const toggleOption = (option) => {
-    if (submitted) return; // prevent changes after submit
+    if (submitted) return;
     if (selectedOptions.includes(option)) {
       setSelectedOptions(selectedOptions.filter(o => o !== option));
     } else {
@@ -82,24 +82,33 @@ export default function Quiz() {
 
   return (
     <div className="quiz">
+      {/* Progress bar */}
+      <div className="progress-bar">
+        <div
+          className="progress-fill"
+          style={{ width: `${((current + 1) / questions.length) * 100}%` }}
+        ></div>
+      </div>
+
       <h2>Topic: {topicId.toUpperCase()} ({level})</h2>
       <h3>Question {current + 1} of {questions.length}</h3>
       <p>{currentQuestion.question}</p>
       <div className="options">
         {currentQuestion.options.map((opt, i) => {
           let className = "";
+          let tick = "";
+
           if (submitted) {
             if (currentQuestion.answer) {
-              // single-answer feedback
               if (opt === currentQuestion.answer) className = "correct";
               else if (selectedOptions.includes(opt)) className = "wrong";
             } else if (currentQuestion.answers) {
-              // multiple-answer feedback
               if (currentQuestion.answers.includes(opt)) className = "correct";
               else if (selectedOptions.includes(opt)) className = "wrong";
             }
           } else if (selectedOptions.includes(opt)) {
-            className = "selected";
+            className = "chosen"; // black highlight
+            tick = "✔"; // tick mark
           }
 
           return (
@@ -108,11 +117,12 @@ export default function Quiz() {
               onClick={() => toggleOption(opt)}
               className={className}
             >
-              {opt}
+              {opt} {tick}
             </Button>
           );
         })}
       </div>
+
       <div className="actions">
         {!submitted ? (
           <Button onClick={handleSubmit}>Submit</Button>
@@ -120,6 +130,7 @@ export default function Quiz() {
           <Button onClick={handleNext}>Next</Button>
         )}
       </div>
+
       {submitted && (
         <p className={isCorrect ? "feedback-correct" : "feedback-wrong"}>
           {isCorrect ? "✅ Correct!" : "❌ Incorrect"}
