@@ -36,8 +36,8 @@ function App() {
         <Route path="/leaderboard" element={<Leaderboard user={user} />} />
         <Route path="/help" element={<Help />} /> 
         <Route path="/profile" element={<Profile user={user} setUser={setUser} />} /> 
-        <Route path="/login" element={<Login />} />
-        <Route path="/signup" element={<Signup />} />
+        <Route path="/login" element={<Login setUser={setUser} />} />
+        <Route path="/signup" element={<Signup setUser={setUser} />} />
       </Routes>
     </Router>
   );
