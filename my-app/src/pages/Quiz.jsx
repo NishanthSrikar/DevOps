@@ -1,7 +1,6 @@
 // src/pages/Quiz.jsx
 import React, { useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import Button from "../components/Button";
 
 import aimlData from "../data/aiml.json";
 import dsData from "../data/ds.json";
@@ -38,10 +37,17 @@ export default function Quiz() {
 
   const toggleOption = (option) => {
     if (submitted) return;
-    if (selectedOptions.includes(option)) {
-      setSelectedOptions(selectedOptions.filter(o => o !== option));
-    } else {
-      setSelectedOptions([...selectedOptions, option]);
+
+    if (currentQuestion.answer) {
+      // single answer → radio
+      setSelectedOptions([option]);
+    } else if (currentQuestion.answers) {
+      // multiple answers → checkboxes
+      if (selectedOptions.includes(option)) {
+        setSelectedOptions(selectedOptions.filter(o => o !== option));
+      } else {
+        setSelectedOptions([...selectedOptions, option]);
+      }
     }
   };
 
@@ -92,42 +98,51 @@ export default function Quiz() {
 
       <h2>Topic: {topicId.toUpperCase()} ({level})</h2>
       <h3>Question {current + 1} of {questions.length}</h3>
-      <p>{currentQuestion.question}</p>
+      <p>
+        {currentQuestion.question}{" "}
+        {currentQuestion.answers && (
+          <span className="multi-note">(Select all the right answers)</span>
+        )}
+      </p>
+
       <div className="options">
-        {currentQuestion.options.map((opt, i) => {
-          let className = "";
-          let tick = "";
+  {currentQuestion.options.map((opt, i) => {
+    const isSelected = selectedOptions.includes(opt);
+    let className = "";
 
-          if (submitted) {
-            if (currentQuestion.answer) {
-              if (opt === currentQuestion.answer) className = "correct";
-              else if (selectedOptions.includes(opt)) className = "wrong";
-            } else if (currentQuestion.answers) {
-              if (currentQuestion.answers.includes(opt)) className = "correct";
-              else if (selectedOptions.includes(opt)) className = "wrong";
-            }
-          } else if (selectedOptions.includes(opt)) {
-            className = "chosen"; // black highlight
-            tick = "✔"; // tick mark
-          }
+    if (submitted) {
+      if (currentQuestion.answer) {
+        if (opt === currentQuestion.answer) className = "correct";
+        else if (isSelected) className = "wrong";
+      } else if (currentQuestion.answers) {
+        if (currentQuestion.answers.includes(opt)) className = "correct";
+        else if (isSelected) className = "wrong";
+      }
+    }
 
-          return (
-            <Button
-              key={i}
-              onClick={() => toggleOption(opt)}
-              className={className}
-            >
-              {opt} {tick}
-            </Button>
-          );
-        })}
+    return (
+      <div key={i} className={`option-wrapper ${className}`}>
+        <label className="option-label">
+          <input
+            type={currentQuestion.answer ? "radio" : "checkbox"}
+            name={`question-${current}`}
+            checked={isSelected}
+            onChange={() => toggleOption(opt)}
+            disabled={submitted}
+          />
+          {opt}
+        </label>
       </div>
+    );
+  })}
+</div>
+
 
       <div className="actions">
         {!submitted ? (
-          <Button onClick={handleSubmit}>Submit</Button>
+          <button onClick={handleSubmit}>Submit</button>
         ) : (
-          <Button onClick={handleNext}>Next</Button>
+          <button onClick={handleNext}>Next</button>
         )}
       </div>
 
