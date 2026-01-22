@@ -1,22 +1,32 @@
 // src/components/Navbar.jsx
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 
 export default function Navbar({ user }) {
   return (
     <nav className="navbar">
-      <div className="logo">Quiz Master</div>
-      <ul className="nav-links">
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/topics">Topics</Link></li>
-        <li><Link to="/leaderboard">Leaderboard</Link></li>
-        <li><Link to="/help">Help</Link></li>
-      </ul>
-      <div className="nav-actions">
-        <button>Share</button>
-        {user && <Link to="/profile" className="profile">{user.username}</Link>}
+      <h1 className="logo">QuizMaster 🎓</h1>
+      <div className="nav-links">
+        <Link to="/">Home</Link>
+        <Link to="/topics">Topics</Link>
+        <Link to="/leaderboard">Leaderboard</Link>
+        <Link to="/help">Help</Link>
+        {user && <Link to="/profile">Profile</Link>}
+      </div>
+      <div className="auth-buttons">
+        {user ? (
+          <span className="username-highlight">👤 {user.username}</span>
+        ) : (
+          <>
+            <Link to="/login">
+              <button className="login-btn">Login</button>
+            </Link>
+            <Link to="/signup">
+              <button className="signup-btn">Signup</button>
+            </Link>
+          </>
+        )}
       </div>
     </nav>
   );
 }
-

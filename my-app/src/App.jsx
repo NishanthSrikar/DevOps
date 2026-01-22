@@ -11,6 +11,8 @@ import Result from "./pages/Result";
 import Leaderboard from "./pages/Leaderboard";
 import Help from "./pages/Help";
 import Profile from "./pages/Profile";
+import Login from "./pages/Login";
+import Signup from "./pages/Signup";
 
 function App() {
   const [user, setUser] = useState(() => {
@@ -34,6 +36,8 @@ function App() {
         <Route path="/leaderboard" element={<Leaderboard user={user} />} />
         <Route path="/help" element={<Help />} /> 
         <Route path="/profile" element={<Profile user={user} setUser={setUser} />} /> 
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
       </Routes>
     </Router>
   );

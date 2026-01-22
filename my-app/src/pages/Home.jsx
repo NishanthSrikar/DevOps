@@ -1,45 +1,8 @@
 // src/pages/Home.jsx
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 
-export default function Home({ user, setUser }) {
-  const [topUsers, setTopUsers] = useState([]);
-  const [showLogin, setShowLogin] = useState(false);
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
-
-  useEffect(() => {
-    const storedUsers = JSON.parse(localStorage.getItem("quizUsers")) || [];
-    const sorted = [...storedUsers].sort((a, b) => (b.stars || 0) - (a.stars || 0));
-    setTopUsers(sorted.slice(0, 3));
-  }, []);
-
-  const handleLogin = () => {
-    if (!username || !password) return;
-
-    let allUsers = JSON.parse(localStorage.getItem("quizUsers")) || [];
-    let existingUser = allUsers.find(u => u.username === username);
-
-    if (existingUser) {
-      if (existingUser.password === password) {
-        setUser(existingUser);
-        localStorage.setItem("quizUser", JSON.stringify(existingUser));
-      } else {
-        alert("Incorrect password!");
-      }
-    } else {
-      const newUser = { username, password, stars: 0, points: 0 };
-      allUsers.push(newUser);
-      setUser(newUser);
-      localStorage.setItem("quizUser", JSON.stringify(newUser));
-      localStorage.setItem("quizUsers", JSON.stringify(allUsers));
-    }
-
-    setUsername("");
-    setPassword("");
-    setShowLogin(false); // close modal after login
-  };
-
+export default function Home({ user }) {
   return (
     <div className="home">
       {/* Hero Section */}
@@ -50,41 +13,10 @@ export default function Home({ user, setUser }) {
         ) : (
           <p>Sharpen your skills and knowledge with interactive quizzes across multiple topics.</p>
         )}
-        <div>
-          {!user && (
-            <button onClick={() => setShowLogin(true)} className="cta-btn">
-              Login / Sign Up
-            </button>
-          )}
-        </div>
         <Link to="/topics">
           <button className="cta-btn">Start Learning</button>
         </Link>
       </section>
-
-      {/* Login Modal */}
-      {showLogin && (
-        <div className="login-modal">
-          <div className="login-box">
-            <button className="close-btn" onClick={() => setShowLogin(false)}>✖</button>
-            <h2>Login to QuizMaster</h2>
-            <input
-              type="text"
-              placeholder="Username"
-              value={username}
-              onChange={(e) => setUsername(e.target.value)}
-            />
-            <input
-              type="password"
-              placeholder="Password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-            />
-            <br/>
-            <button onClick={handleLogin}>Login</button>
-          </div>
-        </div>
-      )}
 
       {/* Features Section */}
       <section className="features">
