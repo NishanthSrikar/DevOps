@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-export default function Login() {
+export default function Login({ setUser }) {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
@@ -27,6 +27,7 @@ export default function Login() {
     }
 
     localStorage.setItem("quizUser", JSON.stringify(existingUser));
+    setUser(existingUser);
     alert("Login successful!");
     navigate("/topics");
   };
@@ -46,6 +47,10 @@ export default function Login() {
         value={password}
         onChange={e => setPassword(e.target.value)}
       />
+      
+      {/* Forgot password placeholder */}
+      <p className="forgot-password">Forgot password?</p>
+
       <button onClick={handleLogin}>Login</button>
     </div>
   );
