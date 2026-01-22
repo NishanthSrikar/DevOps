@@ -428,3 +428,14 @@ button:hover {
   padding: 6px 12px;
   border-radius: 8px;
 }
+
+.forgot-password {
+  font-size: 0.9rem;
+  color: #3498db;
+  margin: 8px 0;
+  cursor: pointer;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}

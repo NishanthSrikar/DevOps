@@ -26,6 +26,7 @@ export default function Login({ setUser }) {
       return;
     }
 
+    // ✅ Successful login
     localStorage.setItem("quizUser", JSON.stringify(existingUser));
     setUser(existingUser);
     alert("Login successful!");
@@ -47,11 +48,11 @@ export default function Login({ setUser }) {
         value={password}
         onChange={e => setPassword(e.target.value)}
       />
-      
+
       {/* Forgot password placeholder */}
       <p className="forgot-password">Forgot password?</p>
 
-     <button type="button" onClick={handleLogin}>Login</button>
+      <button type="button" onClick={handleLogin}>Login</button>
     </div>
   );
 }
