@@ -51,7 +51,7 @@ export default function Login({ setUser }) {
       {/* Forgot password placeholder */}
       <p className="forgot-password">Forgot password?</p>
 
-      <button onClick={handleLogin}>Login</button>
+     <button type="button" onClick={handleLogin}>Login</button>
     </div>
   );
 }
