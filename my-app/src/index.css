@@ -360,10 +360,6 @@ button:hover {
   color: white !important;
 }
 
-.correct {
-  background-color: #4caf50 !important; /* green */
-  color: white !important;
-}
 
 .wrong {
   background-color: #f44336 !important; /* red */
