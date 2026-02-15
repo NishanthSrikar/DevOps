@@ -26,7 +26,13 @@ export default function Quiz() {
     cyber_security: cyberData
   };
 
-  const questions = topicMap[topicId]?.[level] || [];
+// Utility function to shuffle an array
+const shuffleArray = (arr) => {
+  return [...arr].sort(() => Math.random() - 0.5);
+};
+
+const questions = shuffleArray(topicMap[topicId]?.[level] || []);
+
   const [current, setCurrent] = useState(0);
   const [score, setScore] = useState(0);
   const [selectedOptions, setSelectedOptions] = useState([]);
