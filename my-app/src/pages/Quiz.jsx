@@ -1,5 +1,5 @@
 // src/pages/Quiz.jsx
-import React, { useState } from "react";
+import React, { useState, useMemo } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 
 import aimlData from "../data/aiml.json";
@@ -26,12 +26,13 @@ export default function Quiz() {
     cyber_security: cyberData
   };
 
-// Utility function to shuffle an array
-const shuffleArray = (arr) => {
-  return [...arr].sort(() => Math.random() - 0.5);
-};
+  // Utility function to shuffle an array
+  const shuffleArray = (arr) => [...arr].sort(() => Math.random() - 0.5);
 
-const questions = shuffleArray(topicMap[topicId]?.[level] || []);
+  // ✅ Shuffle questions only once per quiz attempt
+  const questions = useMemo(() => {
+    return shuffleArray(topicMap[topicId]?.[level] || []);
+  }, [topicId, level]);
 
   const [current, setCurrent] = useState(0);
   const [score, setScore] = useState(0);
@@ -49,11 +50,9 @@ const questions = shuffleArray(topicMap[topicId]?.[level] || []);
       setSelectedOptions([option]);
     } else if (currentQuestion.answers) {
       // multiple answers → checkboxes
-      if (selectedOptions.includes(option)) {
-        setSelectedOptions(selectedOptions.filter(o => o !== option));
-      } else {
-        setSelectedOptions([...selectedOptions, option]);
-      }
+      setSelectedOptions((prev) =>
+        prev.includes(option) ? prev.filter((o) => o !== option) : [...prev, option]
+      );
     }
   };
 
@@ -67,17 +66,17 @@ const questions = shuffleArray(topicMap[topicId]?.[level] || []);
       const selectedSet = new Set(selectedOptions);
       correct =
         correctSet.size === selectedSet.size &&
-        [...correctSet].every(ans => selectedSet.has(ans));
+        [...correctSet].every((ans) => selectedSet.has(ans));
     }
 
     setIsCorrect(correct);
-    if (correct) setScore(score + 1);
+    if (correct) setScore((prev) => prev + 1);
     setSubmitted(true);
   };
 
   const handleNext = () => {
     if (current + 1 < questions.length) {
-      setCurrent(current + 1);
+      setCurrent((prev) => prev + 1);
       setSelectedOptions([]);
       setSubmitted(false);
       setIsCorrect(false);
@@ -91,6 +90,38 @@ const questions = shuffleArray(topicMap[topicId]?.[level] || []);
   if (questions.length === 0) {
     return <p>No questions found for {topicId} ({level}).</p>;
   }
+
+  // Helper to render options
+  const renderOptions = () =>
+    currentQuestion.options.map((opt, i) => {
+      const isSelected = selectedOptions.includes(opt);
+      let className = "";
+
+      if (submitted) {
+        if (currentQuestion.answer) {
+          if (opt === currentQuestion.answer) className = "correct";
+          else if (isSelected) className = "wrong";
+        } else if (currentQuestion.answers) {
+          if (currentQuestion.answers.includes(opt)) className = "correct";
+          else if (isSelected) className = "wrong";
+        }
+      }
+
+      return (
+        <div key={i} className={`option-wrapper ${className}`}>
+          <label className="option-label">
+            <input
+              type={currentQuestion.answer ? "radio" : "checkbox"}
+              name={`question-${current}`}
+              checked={isSelected}
+              onChange={() => toggleOption(opt)}
+              disabled={submitted}
+            />
+            {opt}
+          </label>
+        </div>
+      );
+    });
 
   return (
     <div className="quiz">
@@ -111,38 +142,7 @@ const questions = shuffleArray(topicMap[topicId]?.[level] || []);
         )}
       </p>
 
-      <div className="options">
-  {currentQuestion.options.map((opt, i) => {
-    const isSelected = selectedOptions.includes(opt);
-    let className = "";
-
-    if (submitted) {
-      if (currentQuestion.answer) {
-        if (opt === currentQuestion.answer) className = "correct";
-        else if (isSelected) className = "wrong";
-      } else if (currentQuestion.answers) {
-        if (currentQuestion.answers.includes(opt)) className = "correct";
-        else if (isSelected) className = "wrong";
-      }
-    }
-
-    return (
-      <div key={i} className={`option-wrapper ${className}`}>
-        <label className="option-label">
-          <input
-            type={currentQuestion.answer ? "radio" : "checkbox"}
-            name={`question-${current}`}
-            checked={isSelected}
-            onChange={() => toggleOption(opt)}
-            disabled={submitted}
-          />
-          {opt}
-        </label>
-      </div>
-    );
-  })}
-</div>
-
+      <div className="options">{renderOptions()}</div>
 
       <div className="actions">
         {!submitted ? (
